@@ -168,6 +168,7 @@ ElectrolyticCrucibleBattery.addRecipe(<liquid:moltenmagnesium> * 800, <liquid:ch
 ElectrolyticCrucibleBattery.addRecipe(<liquid:moltencalcium> * 800, <liquid:chlorine> * 800, null, null, <liquid:moltencalciumchloride> * 800, 384000, 100);
 ElectrolyticCrucibleBattery.addRecipe(<liquid:moltenlithium> * 1600, <liquid:chlorine> * 800, null, null, <liquid:moltenlithiumchloride> * 1600, 384000, 100);
 ElectrolyticCrucibleBattery.addRecipe(<liquid:hydrogen> * 800, <liquid:fluorine> * 800, null, null, <liquid:hydrofluoric_acid> * 1600, 1536000, 400);
+ElectrolyticCrucibleBattery.addRecipe(<liquid:carbon_monoxide> * 1600, <liquid:oxygen> * 800, null, null, <liquid:carbon_dioxide> * 1600, 384000, 100);
 
 //Melting recipes
 MeltingCrucible.addRecipe(<liquid:moltensalt> * 100, <ore:dustSalt>, 40);

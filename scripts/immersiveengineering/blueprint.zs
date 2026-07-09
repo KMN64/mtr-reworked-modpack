@@ -99,8 +99,10 @@ recipes.addShaped(<immersiveengineering:blueprint>.withTag({blueprint: "Specialt
 */
 
 //Add iridium and tungsten Arc Furnace Electrodes that are "infinite"
+Blueprint.addRecipe("electrode", <immersiveengineering:graphite_electrode>.withTag({graphDmg:-1440000}), [<immersiveengineering:graphite_electrode>, <ore:stickTungsten>, <ore:stickTungsten>, <ore:stickTungsten>, <ore:stickTungsten>]);
 Blueprint.addRecipe("electrode", <immersiveengineering:graphite_electrode>.withTag({graphDmg:-1440000}), [<immersiveengineering:graphite_electrode>, <ore:stickMolybdenum>, <ore:stickMolybdenum>, <ore:stickMolybdenum>, <ore:stickMolybdenum>]);
 Blueprint.addRecipe("electrode", <immersiveengineering:graphite_electrode>.withTag({graphDmg:-6048000}), [<immersiveengineering:graphite_electrode>, <ore:stickIridium>, <ore:stickIridium>, <ore:stickIridium>, <ore:stickIridium>]);
+Blueprint.addRecipe("electrode", <ore:stickGraphiteDepletedUraniumComposite>.firstItem * 4, [<immersiveengineering:graphite_electrode>, <ore:stickDepletedUraniumDioxide>, <ore:stickDepletedUraniumDioxide>]);
 
 //Ammunition tweaks
 Blueprint.removeRecipe(<immersiveengineering:bullet:2>.withTag({bullet: "armor_piercing"}));

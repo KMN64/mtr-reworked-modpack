@@ -26,11 +26,11 @@ injection.addRecipe(<ore:rodBlaze>, <gas:endacid> * 125, <minecraft:blaze_powder
 injection.addRecipe(<ore:gemPrismarine>, <gas:endacid> * 125, <minecraft:prismarine_crystals> * 3);
 
 //Brine and lithium changes and additions
-thermalevaporation.removeRecipe(<liquid:brine>);
+//thermalevaporation.removeRecipe(<liquid:brine>);
 thermalevaporation.addRecipe(<liquid:saltwater> * 10, <liquid:richbrine>);
 thermalevaporation.addRecipe(<liquid:brine> * 10, <liquid:lithiumchloridesolution>);
 thermalevaporation.addRecipe(<liquid:richbrine> * 10, <liquid:magnesiumchloridesolution>);
-separator.removeRecipe(<liquid:brine>);
+//separator.removeRecipe(<liquid:brine>);
 separator.addRecipe(<liquid:brine> * 10, 1200, <gas:hydrogen>, <gas:chlorine>);
 separator.addRecipe(<liquid:richbrine> * 3, 1200, <gas:hydrogen> * 1, <gas:chlorine> * 1);
 
