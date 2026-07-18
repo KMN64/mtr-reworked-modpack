@@ -1,9 +1,9 @@
-GPS Unit & Circuit Blueprints are kitbashed from Mekanism textures, created by CyanideX
-Perfect Circuit texture and Induction Tablet textures are also from Mekanism textures, created by CyanideX
+<p>GPS Unit & Circuit Blueprints are kitbashed from Mekanism textures, created by CyanideX</p>
+<p>Perfect Circuit texture and Induction Tablet textures are also from Mekanism textures, created by CyanideX</p>
 
-Mekanism can be found here: https://github.com/mekanism/Mekanism
+<p>Mekanism can be found here: https://github.com/mekanism/Mekanism</p>
 
-Most material bases (ingot/plate/dust/rod/etc) are from greyscale versions of IE textures. Some ingots in the pack have switched IE textures
-IE textures are from Immersive Engineering, created by BluSunrize and Hazard. 
+<p>Most material bases (ingot/plate/dust/rod/etc) are from greyscale versions of IE textures. Some ingots in the pack have switched IE textures
+<p>IE textures are from Immersive Engineering, created by BluSunrize and Hazard.</p>
 
-Immersive Engineering can be found here: https://github.com/BluSunrize/ImmersiveEngineering
+<p>Immersive Engineering can be found here: https://github.com/BluSunrize/ImmersiveEngineering</p>
