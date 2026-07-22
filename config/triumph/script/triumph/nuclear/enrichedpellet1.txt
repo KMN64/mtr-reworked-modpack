@@ -1,0 +1,10 @@
+setIcon(<contenttweaker:material_part:120>)
+setTitle("Pellet Production Process")
+setDescription("Craft enriched TRISO fuel pellets from lightly enriched uranium dioxide, silicon, and HOP graphite")
+addParent("triumph:nuclear/enricheduo2")
+criteria = addCriteria("criteria", "minecraft:inventory_changed")
+criteria.addItem(<ore:fuelPelletEnrichedUraniumTRISO>)
+setPos(180,185)
+//Force starting chapter
+visibleIf("triumph:nuclear/root")
+setFrameType("challenge")

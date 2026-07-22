@@ -1,0 +1,10 @@
+{
+    "assembly_cleanroom_sides": [
+        "contenttweaker:sub_block_holder_1@15",
+        "modularmachinery:blockenergyinputhatch@2",
+        "modularmachinery:blockfluidinputhatch@2",
+        "modularmachinery:blockfluidoutputhatch@2",
+        "modularmachinery:blockinputbus@1",
+        "modularmachinery:blockoutputbus@1"
+    ]
+}

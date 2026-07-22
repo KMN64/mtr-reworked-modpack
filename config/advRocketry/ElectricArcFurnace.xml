@@ -1,0 +1,300 @@
+<!-->
+	IMPORTANT NOTICE TO MODPACK MAKERS!!!!
+	
+	XML recipes are being DEPRECATED soon.
+	This means that recipes registered via the XML for MACHINES will no longer work
+	To avoid issues that may arise from this, please either distribute a RESOURCE PACK
+	with relevant JSON recipes OR user Craft tweaker + Advanced rocketry tweaker (3rd party)
+	https://minecraft.curseforge.com/projects/advanced-rocketry-tweaker
+	
+	IMPORTANT NOTICE TO MODPACK MAKERS!!!!
+	
+	
+	<Recipe timeRequired="NUMBER" power="NUMBER">
+		<input>
+			<fluidStack>FLUID NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+        </input>
+		<output>
+			<fluidStack>FLUID_NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+		</output>
+	</Recipe>
+	
+	Can have Multiple In/Outputs
+	Some Machines can only Accept either Fluids or Items
+	
+	timeRequired="NUMBER"	how long a Recipe takes, Unit is in Ticks.
+	power="NUMBER" how much Power the Recipes takes per Tick. Unit is in RF.
+	
+	The "useDefault" attribute will prevent loading of recipes if set to "false"
+<!-->
+<Recipes useDefault="false">
+    <Recipe timeRequired="100" power ="6144">
+		<input>
+			<itemStack>minecraft:clay;12</itemStack>
+		</input>
+		<output>
+			<itemStack>minecraft:hardened_clay;12</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power ="6144">
+		<input>
+			<itemStack>minecraft:quartz_block;12</itemStack>
+		</input>
+		<output>
+			<itemStack>futuremc:smooth_quartz;12</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power ="6144">
+		<input>
+			<itemStack>minecraft:glowstone;12</itemStack>
+		</input>
+		<output>
+			<itemStack>charm:smooth_glowstone;12</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power ="6144">
+		<input>
+			<itemStack>contenttweaker:crushed_dolomite;12</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:calcined_crushed_dolomite;12</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power ="6144">
+		<input>
+			<itemStack>contenttweaker:crushed_marble;12</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:calcined_crushed_marble;12</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power ="6144">
+		<input>
+			<oreDict>sand;12</oreDict>
+		</input>
+		<output>
+			<itemStack>minecraft:glass;12</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power ="6144">
+		<input>
+			<itemStack>contenttweaker:silicon_dioxide_dust_block;12</itemStack>
+		</input>
+		<output>
+			<itemStack>minecraft:glass;12</itemStack>
+		</output>
+	</Recipe>
+
+    <Recipe timeRequired="400" power ="6144">
+		<input>
+			<itemStack>minecraft:glass;12</itemStack>
+            <oreDict>dustIron;2</oreDict>
+		</input>
+		<output>
+			<itemStack>immersiveengineering:stone_decoration;12;8</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="400" power ="6144">
+		<input>
+            <oreDict>regolithAny;12</oreDict>
+            <oreDict>stoneBasaltAny;4</oreDict>
+		</input>
+		<output>
+			<itemStack>engineersdecor:panzerglass_block;16</itemStack>
+		</output>
+	</Recipe>
+    
+    <Recipe timeRequired="400" power="3072">
+		<input>
+			<itemStack>contenttweaker:calcined_crushed_dolomite;12</itemStack>
+            <oreDict>dustSilicon;6</oreDict>
+        </input>
+		<output>
+            <oreDict>dustMagnesium;12</oreDict>
+            <itemStack>immersiveengineering:material;6;7</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="400" power="3072">
+		<input>
+			<itemStack>contenttweaker:calcined_crushed_marble;12</itemStack>
+            <oreDict>dustSilicon;9</oreDict>
+        </input>
+		<output>
+            <oreDict>dustMagnesium;6</oreDict>
+            <itemStack>immersiveengineering:material;15;7</itemStack>
+		</output>
+	</Recipe>
+    
+    <Recipe timeRequired="600" power="240">
+		<input>
+			<oreDict>dustCinnabar;48</oreDict>
+            <fluidStack>air;4800</fluidStack>
+        </input>
+		<output>
+            <fluidStack>mercury;4800</fluidStack>
+            <fluidStack>sulfurdioxide;3600</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="600" power="240">
+		<input>
+			<oreDict>dustCinnabar;48</oreDict>
+            <fluidStack>oxygen;4800</fluidStack>
+        </input>
+		<output>
+            <fluidStack>mercury;4800</fluidStack>
+            <fluidStack>sulfurdioxide;4800</fluidStack>
+		</output>
+	</Recipe>
+    
+    
+    <Recipe timeRequired="150" power="480">
+		<input>
+			<oreDict>dustSulfur;12</oreDict>
+            <fluidStack>air;1200</fluidStack>
+        </input>
+		<output>
+			<fluidStack>sulfurdioxide;900</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="150" power="480">
+		<input>
+			<oreDict>dustSulfur;12</oreDict>
+            <fluidStack>oxygen;1200</fluidStack>
+        </input>
+		<output>
+			<fluidStack>sulfurdioxide;1200</fluidStack>
+		</output>
+	</Recipe>
+    
+    <Recipe timeRequired="1600" power="960">
+		<input>
+			<oreDict>fiberBitumen;16</oreDict>
+            <fluidStack>nitrogen;4000</fluidStack>
+        </input>
+		<output>
+            <oreDict>fiberCarbonizedBitumen;16</oreDict>
+            <fluidStack>nitrogen;3500</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="2400" power="960">
+		<input>
+			<oreDict>fiberCarbonizedBitumen;16</oreDict>
+            <fluidStack>helium;4000</fluidStack>
+        </input>
+		<output>
+            <oreDict>fiberCarbon;16</oreDict>
+            <fluidStack>helium;3500</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="2400" power="960">
+		<input>
+			<oreDict>fiberCarbonizedBitumen;16</oreDict>
+            <fluidStack>argon;4000</fluidStack>
+        </input>
+		<output>
+            <oreDict>fiberCarbon;16</oreDict>
+            <fluidStack>argon;3500</fluidStack>
+		</output>
+	</Recipe>
+    
+    <Recipe timeRequired="400" power ="1536">
+		<input>
+            <itemStack>contenttweaker:mega_lowland_regolith_volatiles;48</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:mega_lowland_regolith_volatiles_cobblestone;48</itemStack>
+            <fluidStack>hydrogen;58</fluidStack>
+            <fluidStack>helium;58</fluidStack>
+            <fluidStack>helium3;1</fluidStack>
+            <fluidStack>nitrogen;3</fluidStack>
+            <fluidStack>carbon_dioxide;12</fluidStack>
+            <fluidStack>sulfurdioxide;45</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="400" power ="1536">
+		<input>
+            <itemStack>contenttweaker:mega_highland_regolith_volatiles;48</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:mega_highland_regolith_volatiles_cobblestone;48</itemStack>
+            <fluidStack>hydrogen;101</fluidStack>
+            <fluidStack>helium;101</fluidStack>
+            <fluidStack>helium3;2</fluidStack>
+            <fluidStack>nitrogen;14</fluidStack>
+            <fluidStack>fluorine;9</fluidStack>
+            <fluidStack>carbon_dioxide;45</fluidStack>
+            <fluidStack>sulfurdioxide;15</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="400" power ="1536">
+		<input>
+            <itemStack>contenttweaker:mega_lowland_regolith_iron;48</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:mega_lowland_regolith_iron_cobblestone;48</itemStack>
+            <fluidStack>chlorine;672</fluidStack>
+            <fluidStack>sulfurtrioxide;4176</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="400" power ="1536">
+		<input>
+            <itemStack>contenttweaker:mega_highland_regolith_iron;48</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:mega_highland_regolith_iron_cobblestone;48</itemStack>
+            <fluidStack>chlorine;576</fluidStack>
+            <fluidStack>sulfurtrioxide;1824</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="400" power ="1536">
+		<input>
+            <itemStack>contenttweaker:mega_lowland_regolith_metals;48</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:mega_lowland_regolith_metals_cobblestone;48</itemStack>
+            <fluidStack>sulfurdioxide;1776</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="400" power ="1536">
+		<input>
+            <itemStack>contenttweaker:mega_highland_regolith_metals;48</itemStack>
+		</input>
+		<output>
+			<itemStack>contenttweaker:mega_highland_regolith_metals_cobblestone;48</itemStack>
+            <fluidStack>sulfurdioxide;2016</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1600" power ="6144">
+		<input>
+            <oreDict>dustSilicon;12</oreDict>
+            <oreDict>dustHOPGraphite;48</oreDict>
+            <oreDict>dustLightlyEnrichedUraniumDioxide;36</oreDict>
+		</input>
+		<output>
+			<oreDict>fuelPelletEnrichedUraniumTRISO;48</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1600" power ="6144">
+		<input>
+			<oreDict>fuelPelletDepletedUraniumTRISO;48</oreDict>
+		</input>
+		<output>
+            <oreDict>dustSilicon;12</oreDict>
+            <oreDict>dustHOPGraphite;48</oreDict>
+            <oreDict>dustMixedFissileMetals;36</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1600" power ="960">
+		<input>
+            <oreDict>fuelBundleDepleted</oreDict>
+		</input>
+		<output>
+			<oreDict>smallPipeZirconiumNiobiumAlloy;9</oreDict>
+			<oreDict>fuelPelletMixedFissileMetals;72</oreDict>
+		</output>
+	</Recipe>
+</Recipes>

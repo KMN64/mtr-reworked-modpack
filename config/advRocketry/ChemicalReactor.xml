@@ -1,0 +1,669 @@
+<!-->
+	IMPORTANT NOTICE TO MODPACK MAKERS!!!!
+	
+	XML recipes are being DEPRECATED soon.
+	This means that recipes registered via the XML for MACHINES will no longer work
+	To avoid issues that may arise from this, please either distribute a RESOURCE PACK
+	with relevant JSON recipes OR user Craft tweaker + Advanced rocketry tweaker (3rd party)
+	https://minecraft.curseforge.com/projects/advanced-rocketry-tweaker
+	
+	IMPORTANT NOTICE TO MODPACK MAKERS!!!!
+	
+	
+	<Recipe timeRequired="NUMBER" power="NUMBER">
+		<input>
+			<fluidStack>FLUID NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+        </input>
+		<output>
+			<fluidStack>FLUID_NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+		</output>
+	</Recipe>
+	
+	Can have Multiple In/Outputs
+	Some Machines can only Accept either Fluids or Items
+	
+	timeRequired="NUMBER"	how long a Recipe takes, Unit is in Ticks.
+	power="NUMBER" how much Power the Recipes takes per Tick. Unit is in RF.
+	
+	The "useDefault" attribute will prevent loading of recipes if set to "false"
+<!-->
+<Recipes useDefault="false">
+	    <Recipe timeRequired="200" power="256">
+		<input>
+			<fluidStack>richbrine;300</fluidStack>
+            <fluidStack>water;500</fluidStack>
+        </input>
+		<output>
+			<fluidStack>brine;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="200" power="768">
+		<input>
+			<fluidStack>carbon_dioxide;800</fluidStack>
+            <fluidStack>hydrogen;2400</fluidStack>
+            <oreDict>dustCobalt;8</oreDict>
+        </input>
+		<output>
+			<fluidStack>methane;800</fluidStack>
+            <fluidStack>water;800</fluidStack>
+            <oreDict>dustCobalt;8</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="200" power="768">
+		<input>
+			<fluidStack>carbon_dioxide;800</fluidStack>
+            <fluidStack>hydrogen;2400</fluidStack>
+            <oreDict>dustIron;8</oreDict>
+        </input>
+		<output>
+            <oreDict>dustIron;8</oreDict>
+			<fluidStack>methane;800</fluidStack>
+            <fluidStack>water;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="600" power="96">
+		<input>
+			<fluidStack>ethanol;800</fluidStack>
+            <fluidStack>sulfuric_acid;400</fluidStack>
+        </input>
+		<output>
+			<fluidStack>methane;800</fluidStack>
+            <fluidStack>dilutedsulfuricacid;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="900" power="1024">
+		<input>
+			<itemStack>contenttweaker:calcined_crushed_dolomite;2</itemStack>
+            <oreDict>dustSilicon</oreDict>
+        </input>
+		<output>
+            <oreDict>dustMagnesium;2</oreDict>
+            <itemStack>immersiveengineering:material;1;7</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="900" power="1024">
+		<input>
+			<itemStack>contenttweaker:calcined_crushed_marble;4</itemStack>
+            <oreDict>dustSilicon;3</oreDict>
+        </input>
+		<output>
+            <oreDict>dustMagnesium;2</oreDict>
+            <itemStack>immersiveengineering:material;5;7</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1920" power="800">
+		<input>
+			<fluidStack>methane;1600</fluidStack>
+            <fluidStack>oxygen;50</fluidStack>
+        </input>
+		<output>
+			<fluidStack>polyethene;4000</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1920" power="800">
+		<input>
+			<fluidStack>methane;1600</fluidStack>
+            <fluidStack>air;50</fluidStack>
+        </input>
+		<output>
+			<fluidStack>polyethene;3000</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="2400" power="384">
+		<input>
+            <itemStack>contenttweaker:silicon_dioxide_dust_block</itemStack>
+			<oreDict>dustAnyCarbon;8</oreDict>
+        </input>
+		<output>
+			<fluidStack>carbon_dioxide;800</fluidStack>
+            <itemStack>libvulpes:productdust;8;3</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="512">
+		<input>
+			<fluidStack>hydrogensulfide;800</fluidStack>
+            <fluidStack>air;1200</fluidStack>
+        </input>
+		<output>
+			<fluidStack>sulfurdioxide;600</fluidStack>
+            <fluidStack>water;600</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="512">
+		<input>
+			<oreDict>dustSulfur;8</oreDict>
+            <fluidStack>air;800</fluidStack>
+        </input>
+		<output>
+			<fluidStack>sulfurdioxide;600</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="512">
+		<input>
+			<fluidStack>sulfurdioxide;800</fluidStack>
+            <fluidStack>air;400</fluidStack>
+        </input>
+		<output>
+			<fluidStack>sulfurtrioxide;600</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="512">
+		<input>
+			<fluidStack>hydrogensulfide;800</fluidStack>
+            <fluidStack>oxygen;1200</fluidStack>
+        </input>
+		<output>
+			<fluidStack>sulfurdioxide;800</fluidStack>
+            <fluidStack>water;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="512">
+		<input>
+			<oreDict>dustSulfur;8</oreDict>
+            <fluidStack>oxygen;800</fluidStack>
+        </input>
+		<output>
+			<fluidStack>sulfurdioxide;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="512">
+		<input>
+			<fluidStack>sulfurdioxide;800</fluidStack>
+            <fluidStack>oxygen;400</fluidStack>
+        </input>
+		<output>
+			<fluidStack>sulfurtrioxide;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="512">
+		<input>
+			<fluidStack>sulfurtrioxide;800</fluidStack>
+            <fluidStack>water;800</fluidStack>
+        </input>
+		<output>
+			<fluidStack>sulfuric_acid;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="512">
+		<input>
+            <oreDict>dustFluorite</oreDict>
+			<fluidStack>sulfuric_acid;400</fluidStack>
+        </input>
+		<output>
+			<fluidStack>hydrofluoric_acid;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="2048">
+		<input>
+			<fluidStack>hydrogen;1200</fluidStack>
+            <fluidStack>nitrogen;400</fluidStack>
+        </input>
+		<output>
+			<fluidStack>ammonia;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="2048">
+		<input>
+			<fluidStack>hydrogen;400</fluidStack>
+            <fluidStack>chlorine;400</fluidStack>
+        </input>
+		<output>
+			<fluidStack>liquidhydrogenchloride;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="512">
+		<input>
+			<fluidStack>hydrogen;800</fluidStack>
+            <fluidStack>oxygen;400</fluidStack>
+        </input>
+		<output>
+			<fluidStack>hydrogenperoxide;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="400" power="384">
+		<input>
+			<fluidStack>ammonia;1600</fluidStack>
+            <fluidStack>hydrogenperoxide;800</fluidStack>
+        </input>
+		<output>
+			<fluidStack>hydrazine;800</fluidStack>
+            <fluidStack>water;1600</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="480">
+		<input>
+			<oreDict>dustSilicon;4</oreDict>
+            <fluidStack>oxygen;400</fluidStack>
+        </input>
+		<output>
+			<itemStack>contenttweaker:silicon_dioxide_dust_block</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="480">
+		<input>
+			<itemStack>contenttweaker:charcoal_dust_block</itemStack>
+            <fluidStack>oxygen;800</fluidStack>
+        </input>
+		<output>
+			<fluidStack>carbon_dioxide;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="512">
+		<input>
+			<fluidStack>nitrogen;400</fluidStack>
+            <fluidStack>oxygen;800</fluidStack>
+        </input>
+		<output>
+			<fluidStack>nitrogendioxide;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="512">
+		<input>
+			<fluidStack>nitrogendioxide;800</fluidStack>
+            <fluidStack>hydrogenperoxide;400</fluidStack>
+        </input>
+		<output>
+			<fluidStack>nitric_acid;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="512">
+		<input>
+			<fluidStack>nitric_acid;200</fluidStack>
+            <fluidStack>liquidhydrogenchloride;600</fluidStack>
+        </input>
+		<output>
+			<fluidStack>nitricacidhydrochloride;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="100" power="512">
+		<input>
+			<fluidStack>ammonia;800</fluidStack>
+            <fluidStack>liquidhydrogenchloride;800</fluidStack>
+        </input>
+		<output>
+            <oreDict>dustAmmoniumChloride;8</oreDict>
+		</output>
+	</Recipe>
+    
+    <Recipe timeRequired="4800" power="1024">
+		<input>
+			<oreDict>dustSilicon;64</oreDict>
+            <oreDict>dustGallium</oreDict>
+            <fluidStack>argon;4000</fluidStack>
+        </input>
+		<output>
+            <oreDict>bouleGalliumDopedSilicon</oreDict>
+            <fluidStack>argon;3500</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="4800" power="2048">
+		<input>
+			<oreDict>dustSilicon;64</oreDict>
+            <oreDict>dustLithium</oreDict>
+            <fluidStack>argon;4000</fluidStack>
+        </input>
+		<output>
+			<oreDict>bouleLithiumDopedSilicon</oreDict>
+            <fluidStack>argon;3500</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="4800" power="1024">
+		<input>
+			<oreDict>dustSilicon;64</oreDict>
+            <oreDict>dustGold</oreDict>
+            <fluidStack>argon;4000</fluidStack>
+        </input>
+		<output>
+            <oreDict>bouleGoldDopedSilicon</oreDict>
+            <fluidStack>argon;3500</fluidStack>
+		</output>
+	</Recipe>
+
+	<Recipe timeRequired="100" power="1920">
+		<input>
+			<itemStack>contenttweaker:hop_graphite_dust_block</itemStack>
+            <fluidStack>methane;3200</fluidStack>
+            <fluidStack>helium;4000</fluidStack>
+        </input>
+		<output>
+            <oreDict>fiberGraphene;32</oreDict>
+            <fluidStack>hydrogen;12800</fluidStack>
+            <fluidStack>helium;3900</fluidStack>
+		</output>
+	</Recipe>
+    
+    <Recipe timeRequired="300" power="1024">
+		<input>
+			<oreDict>dustAlumina;16</oreDict>
+            <fluidStack>distwater;4800</fluidStack>
+        </input>
+		<output>
+            <oreDict>dustAluminiumHydroxide;16</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="300" power="1024">
+		<input>
+			<fluidStack>sodiumaluminatesolution;800</fluidStack>
+            <fluidStack>hydrofluoric_acid;4800</fluidStack>
+        </input>
+		<output>
+            <fluidStack>moltencryolite;800</fluidStack>
+            <fluidStack>water;5600</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="300" power="384">
+		<input>
+			<oreDict>dustDirtyAluminum;16</oreDict>
+            <fluidStack>sodiumhydroxidesolution;2400</fluidStack>
+        </input>
+		<output>
+            <fluidStack>impuresodiumaluminatesolution;2400</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="300" power="128">
+		<input>
+			<itemStack>earthworks:item_quicklime;12</itemStack>
+            <fluidStack>impuresodiumaluminatesolution;2400</fluidStack>
+        </input>
+		<output>
+            <fluidStack>sodiumaluminatesolution;2400</fluidStack>
+            <itemStack>contenttweaker:red_mud_sludge;6</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="300" power="256">
+		<input>
+            <oreDict>dustAluminiumHydroxide</oreDict>
+            <fluidStack>sodiumaluminatesolution;2400</fluidStack>
+        </input>
+		<output>
+            <fluidStack>sodiumhydroxidesolution;2000</fluidStack>
+            <oreDict>dustAluminiumHydroxide;25</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="600" power="256">
+		<input>
+			<oreDict>dustCinnabar;48</oreDict>
+            <fluidStack>oxygen;4800</fluidStack>
+        </input>
+		<output>
+            <fluidStack>mercury;4800</fluidStack>
+            <fluidStack>sulfurdioxide;4800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="300" power="192">
+		<input>
+			<oreDict>dustWashedGold;6</oreDict>
+            <fluidStack>mercury;1600</fluidStack>
+        </input>
+		<output>
+            <oreDict>amalgamMercuryGold;6</oreDict>
+            <fluidStack>mercury;1000</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="300" power="192">
+		<input>
+			<oreDict>dustWashedSilver;6</oreDict>
+            <fluidStack>mercury;1600</fluidStack>
+        </input>
+		<output>
+            <oreDict>amalgamMercurySilver;6</oreDict>
+            <fluidStack>mercury;1000</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="300" power="512">
+		<input>
+            <oreDict>dustNiobiumPentoxide;12</oreDict>
+            <oreDict>dustAluminum;40</oreDict>
+        </input>
+		<output>
+            <oreDict>dustNiobium;12</oreDict>
+            <oreDict>dustAlumina;40</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1200" power="256">
+		<input>
+            <oreDict>dustDirtyTungsten;24</oreDict>
+            <fluidStack>liquidhydrogenchloride;7200</fluidStack>
+        </input>
+		<output>
+			<oreDict>dustHydratedTungstenTrioxide;36</oreDict>
+            <oreDict>dustCalciumChloride;36</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="2400" power="800">
+		<input>
+            <oreDict>dustRutile;8</oreDict>
+            <oreDict>dustAnyCarbon;16</oreDict>
+            <fluidStack>chlorine;1600</fluidStack>
+        </input>
+		<output>
+            <fluidStack>titaniumtetrachloride;800</fluidStack>
+            <fluidStack>carbon_dioxide;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="2400" power="384">
+		<input>
+            <oreDict>dustMagnesium;16</oreDict>
+            <fluidStack>titaniumtetrachloride;800</fluidStack>
+        </input>
+		<output>
+            <itemStack>libvulpes:productdust;8;7</itemStack>
+            <oreDict>dustMagnesiumChloride;12</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="2400" power="800">
+		<input>
+            <oreDict>dustDirtyZirconium;8</oreDict>
+            <oreDict>dustAnyCarbon;16</oreDict>
+            <fluidStack>chlorine;1600</fluidStack>
+        </input>
+		<output>
+            <fluidStack>zirconiumtetrachloride;800</fluidStack>
+            <fluidStack>carbon_dioxide;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="2400" power="384">
+		<input>
+            <oreDict>dustMagnesium;16</oreDict>
+            <fluidStack>zirconiumtetrachloride;800</fluidStack>
+        </input>
+		<output>
+            <oreDict>dustZirconium;8</oreDict>
+            <oreDict>dustMagnesiumChloride;12</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1600" power="1024">
+		<input>
+            <oreDict>dustAmmoniumChloride;16</oreDict>
+            <fluidStack>nitricacidhydrochloridept;1600</fluidStack>
+        </input>
+		<output>
+            <oreDict>dustAmmoniumChloroplatinate;12</oreDict>
+            <fluidStack>nitricacidhydrochlorideptprocessed;1600</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1600" power="1024">
+		<input>
+            <oreDict>dustAmmoniumChloride;16</oreDict>
+            <fluidStack>nitricacidhydrochlorideir;1600</fluidStack>
+        </input>
+		<output>
+            <oreDict>dustAmmoniumChloroplatinate;4</oreDict>
+            <fluidStack>nitricacidhydrochlorideirprocessed;1600</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1600" power="1024">
+		<input>
+            <oreDict>dustAmmoniumChloride;16</oreDict>
+            <fluidStack>nitricacidhydrochlorideos;1600</fluidStack>
+        </input>
+		<output>
+            <oreDict>dustAmmoniumChloroplatinate;2</oreDict>
+            <fluidStack>nitricacidhydrochlorideosprocessed;1600</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1600" power="256">
+		<input>
+            <itemStack>immersiveengineering:material;4;24</itemStack>
+            <fluidStack>nitricacidhydrochlorideptprocessed;1600</fluidStack>
+        </input>
+		<output>
+            <oreDict>sludgePlatinumRichPGMLeach;4</oreDict>
+            <fluidStack>nitricacidhydrochloride;1600</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1600" power="256">
+		<input>
+            <itemStack>immersiveengineering:material;12;24</itemStack>
+            <fluidStack>nitricacidhydrochlorideirprocessed;1600</fluidStack>
+        </input>
+		<output>
+            <oreDict>sludgeIridiumRichPGMLeach;12</oreDict>
+            <fluidStack>nitricacidhydrochloride;1600</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="1600" power="256">
+		<input>
+            <itemStack>immersiveengineering:material;14;24</itemStack>
+            <fluidStack>nitricacidhydrochlorideosprocessed;1600</fluidStack>
+        </input>
+		<output>
+            <oreDict>sludgeOsmiumRichPGMLeach;12</oreDict>
+            <fluidStack>nitricacidhydrochloride;1600</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="800" power="512">
+		<input>
+            <oreDict>sludgePlatinumRichPGMLeach;4</oreDict>
+            <fluidStack>sulfuric_acid;100</fluidStack>
+        </input>
+		<output>
+            <itemStack>libvulpes:productdust;3;10</itemStack>
+            <fluidStack>osacidicsolution;100</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="800" power="512">
+		<input>
+            <oreDict>sludgeIridiumRichPGMLeach;12</oreDict>
+            <fluidStack>sulfuric_acid;400</fluidStack>
+        </input>
+		<output>
+            <itemStack>libvulpes:productdust;8;10</itemStack>
+            <fluidStack>osacidicsolution;400</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="800" power="512">
+		<input>
+            <oreDict>sludgeOsmiumRichPGMLeach;14</oreDict>
+            <fluidStack>sulfuric_acid;800</fluidStack>
+        </input>
+		<output>
+            <itemStack>libvulpes:productdust;6;10</itemStack>
+            <fluidStack>osacidicsolution;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="400" power="256">
+		<input>
+            <oreDict>dustMagnesium</oreDict>
+            <fluidStack>osacidicsolution;200</fluidStack>
+        </input>
+		<output>
+            <itemStack>mekanism:dust;2;2</itemStack>
+            <itemStack>immersiveengineering:material;1;7</itemStack>
+            <fluidStack>sulfuric_acid;175</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="600" power="256">
+		<input>
+            <fluidStack>ammonia;600</fluidStack>
+            <fluidStack>uraniumsulfatesolution;2400</fluidStack>
+        </input>
+		<output>
+			<oreDict>dustAmmoniumDiuranate;6</oreDict>
+            <fluidStack>uraniumtailingssolution;2400</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="600" power="256">
+		<input>
+            <oreDict>dustStone;16</oreDict>
+            <fluidStack>uraniumtailingssolution;2400</fluidStack>
+        </input>
+		<output>
+			<itemStack>contenttweaker:uranium_tailings;8</itemStack>
+            <fluidStack>sulfuric_acid;2000</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="600" power="256">
+		<input>
+			<oreDict>dustFineYellowcake;24</oreDict>
+            <fluidStack>hydrogen;1600</fluidStack>
+        </input>
+		<output>
+			<itemStack>immersiveengineering:metal;24;14</itemStack>
+            <fluidStack>water;1600</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="150" power="96">
+		<input>
+			<oreDict>dustUranium;8</oreDict>
+            <fluidStack>hydrofluoric_acid;3200</fluidStack>
+        </input>
+		<output>
+			<oreDict>dustUraniumTetrafluoride;8</oreDict>
+            <fluidStack>water;3200</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="75" power="96">
+		<input>
+			<oreDict>dustUraniumTetrafluoride;8</oreDict>
+            <fluidStack>fluorine;800</fluidStack>
+        </input>
+		<output>
+            <fluidStack>uraniumhexafluoride_007;800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="900" power="1536">
+		<input>
+			<fluidStack>uraniumhexafluoride_000;800</fluidStack>
+            <fluidStack>water;1600</fluidStack>
+        </input>
+		<output>
+            <oreDict>dustDepletedUranylFluoride;8</oreDict>
+            <fluidStack>hydrofluoric_acid;3200</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="900" power="1536">
+		<input>
+			<fluidStack>uraniumhexafluoride_035;800</fluidStack>
+            <fluidStack>water;1600</fluidStack>
+        </input>
+		<output>
+            <oreDict>dustLightlyEnrichedUranylFluoride;8</oreDict>
+            <fluidStack>hydrofluoric_acid;3200</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="600" power="1024">
+		<input>
+			<oreDict>dustDepletedUranylFluoride;8</oreDict>
+            <fluidStack>hydrogen;800</fluidStack>
+        </input>
+		<output>
+            <oreDict>dustDepletedUraniumDioxide;8</oreDict>
+            <fluidStack>hydrofluoric_acid;1600</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="600" power="1024">
+		<input>
+			<oreDict>dustLightlyEnrichedUranylFluoride;8</oreDict>
+            <fluidStack>hydrogen;800</fluidStack>
+        </input>
+		<output>
+            <oreDict>dustLightlyEnrichedUraniumDioxide;8</oreDict>
+            <fluidStack>hydrofluoric_acid;1600</fluidStack>
+		</output>
+	</Recipe>
+</Recipes>

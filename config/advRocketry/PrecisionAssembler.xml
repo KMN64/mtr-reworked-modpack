@@ -1,0 +1,562 @@
+<!-->
+	IMPORTANT NOTICE TO MODPACK MAKERS!!!!
+	
+	XML recipes are being DEPRECATED soon.
+	This means that recipes registered via the XML for MACHINES will no longer work
+	To avoid issues that may arise from this, please either distribute a RESOURCE PACK
+	with relevant JSON recipes OR user Craft tweaker + Advanced rocketry tweaker (3rd party)
+	https://minecraft.curseforge.com/projects/advanced-rocketry-tweaker
+	
+	IMPORTANT NOTICE TO MODPACK MAKERS!!!!
+	
+	
+	<Recipe timeRequired="NUMBER" power="NUMBER">
+		<input>
+			<fluidStack>FLUID NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+        </input>
+		<output>
+			<fluidStack>FLUID_NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+		</output>
+	</Recipe>
+	
+	Can have Multiple In/Outputs
+	Some Machines can only Accept either Fluids or Items
+	
+	timeRequired="NUMBER"	how long a Recipe takes, Unit is in Ticks.
+	power="NUMBER" how much Power the Recipes takes per Tick. Unit is in RF.
+	
+	The "useDefault" attribute will prevent loading of recipes if set to "false"
+<!-->
+<Recipes useDefault="false">
+	<Recipe timeRequired="225" power="128">
+		<input>
+			<oreDict>plateGold</oreDict>
+            <oreDict>dustAnyCarbon;2</oreDict>
+            <itemStack>mekanism:polyethene;4;2</itemStack>
+        </input>
+		<output>
+			<oreDict>smdResistor;16</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="300" power="384">
+		<input>
+			<oreDict>circuitBasic</oreDict>
+            <oreDict>solderItem;4</oreDict>
+            <oreDict>plateCopper</oreDict>
+            <oreDict>circuitBoardPlastic</oreDict>
+        </input>
+		<output>
+			<itemStack>advancedrocketry:ic;1;3</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="300" power="384">
+		<input>
+			<oreDict>circuitBasic</oreDict>
+            <oreDict>solderItem;4</oreDict>
+            <oreDict>plateGold</oreDict>
+            <oreDict>circuitBoardPlastic</oreDict>
+        </input>
+		<output>
+			<itemStack>advancedrocketry:ic;1;4</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="300" power="384">
+		<input>
+			<oreDict>circuitBasic</oreDict>
+            <oreDict>solderItem;4</oreDict>
+            <oreDict>plateSilver</oreDict>
+            <oreDict>circuitBoardPlastic</oreDict>
+        </input>
+		<output>
+			<itemStack>advancedrocketry:ic;1;5</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="450" power="256">
+		<input>
+			<oreDict>circuitPlateIntegratedCircuit</oreDict>
+            <itemStack>mekanism:polyethene;1;2</itemStack>
+            <oreDict>smdResistor;2</oreDict>
+            <itemStack>immersiveengineering:material;2;20</itemStack>
+            <oreDict>solderItem;2</oreDict>
+            <oreDict>circuitBoardPlastic</oreDict>
+        </input>
+		<output>
+			<itemStack>mekanism:controlcircuit</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="450" power="1024">
+		<input>
+			<oreDict>circuitPlateSystemOnChip</oreDict>
+            <itemStack>mekanism:polyethene;1;2</itemStack>
+            <oreDict>smdResistor;2</oreDict>
+            <itemStack>immersiveengineering:material;2;20</itemStack>
+            <oreDict>solderItem;4</oreDict>
+            <oreDict>circuitBoardPlastic;2</oreDict>
+        </input>
+		<output>
+			<itemStack>mekanism:controlcircuit;2</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="450" power="256">
+		<input>
+			<oreDict>circuitPlateIntegratedCircuit;2</oreDict>
+            <oreDict>circuitPlateCentralProcessingUnit</oreDict>
+            <oreDict>smdResistor;2</oreDict>
+            <itemStack>immersiveengineering:material;2;21</itemStack>
+            <oreDict>solderItem;4</oreDict>
+            <oreDict>circuitBoardPlastic</oreDict>
+        </input>
+		<output>
+			<itemStack>mekanism:controlcircuit;1;1</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="450" power="1024">
+		<input>
+			<oreDict>circuitPlateSystemOnChip</oreDict>
+            <itemStack>mekanism:polyethene;1;2</itemStack>
+            <oreDict>smdResistor;2</oreDict>
+            <itemStack>immersiveengineering:material;2;21</itemStack>
+            <oreDict>solderItem;8</oreDict>
+            <oreDict>circuitBoardPlastic;2</oreDict>
+        </input>
+		<output>
+			<itemStack>mekanism:controlcircuit;2;1</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="675" power="1024">
+		<input>
+			<oreDict>circuitPlateCentralProcessingUnit;2</oreDict>
+            <oreDict>gpsUnitItem</oreDict>
+            <oreDict>smdResistor;2</oreDict>
+            <oreDict>wirePGMAny;2</oreDict>
+            <oreDict>solderItem;4</oreDict>
+            <oreDict>circuitBoardPlastic</oreDict>
+        </input>
+		<output>
+			<itemStack>mekanism:controlcircuit;1;2</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="675" power="4096">
+		<input>
+			<oreDict>circuitPlateSystemOnChip;2</oreDict>
+            <oreDict>gpsUnitItem</oreDict>
+            <oreDict>smdResistor;2</oreDict>
+            <oreDict>wirePGMAny;2</oreDict>
+            <oreDict>solderItem;8</oreDict>
+            <oreDict>circuitBoardPlastic;2</oreDict>
+        </input>
+		<output>
+			<itemStack>mekanism:controlcircuit;2;2</itemStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="675" power="3840">
+		<input>
+			<oreDict>grapheneProcessorCrystalEngraved</oreDict>
+            <oreDict>gpsUnitItem;2</oreDict>
+            <oreDict>smdResistor;2</oreDict>
+            <oreDict>wireSuperconductingAny;2</oreDict>
+            <oreDict>solderItem;8</oreDict>
+            <oreDict>circuitBoardPlatinumBackedPlastic</oreDict>
+            <fluidStack>liquid_nitrogen;125</fluidStack>
+        </input>
+		<output>
+			<itemStack>mekanism:controlcircuit;1;3</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="675" power="15360">
+		<input>
+			<oreDict>grapheneProcessorCrystalEngraved</oreDict>
+            <oreDict>gpsUnitItem;2</oreDict>
+            <oreDict>smdResistor;2</oreDict>
+            <oreDict>wireMischmetal;2</oreDict>
+            <oreDict>solderItem;8</oreDict>
+            <oreDict>circuitBoardPlatinumBackedPlastic</oreDict>
+            <fluidStack>liquid_nitrogen;500</fluidStack>
+        </input>
+		<output>
+			<oreDict>perfectCircuitItem</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="675" power="4096">
+		<input>
+			<oreDict>processorCrystalEngraved</oreDict>
+            <oreDict>gpsUnitItem;2</oreDict>
+            <oreDict>smdResistor;2</oreDict>
+            <oreDict>wireNiobiumTitaniumAlloy;2</oreDict>
+            <oreDict>solderItem;8</oreDict>
+            <oreDict>circuitBoardPlatinumBackedPlastic</oreDict>
+            <fluidStack>liquid_nitrogen;125</fluidStack>
+        </input>
+		<output>
+			<itemStack>mekanism:controlcircuit;1;3</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="675" power="16384">
+		<input>
+			<oreDict>naquadahProcessorCrystalEngraved</oreDict>
+            <oreDict>gpsUnitItem;2</oreDict>
+            <oreDict>smdResistor;2</oreDict>
+            <oreDict>wireNiobiumTitaniumAlloy;2</oreDict>
+            <oreDict>solderItem;16</oreDict>
+            <oreDict>circuitBoardPlatinumBackedPlastic;2</oreDict>
+            <fluidStack>liquid_nitrogen;250</fluidStack>
+        </input>
+		<output>
+			<itemStack>mekanism:controlcircuit;2;3</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="675" power="16384">
+		<input>
+			<oreDict>naquadahProcessorCrystalEngraved</oreDict>
+            <oreDict>gpsUnitItem;2</oreDict>
+            <oreDict>smdResistor;2</oreDict>
+            <oreDict>wireYttriumBariumCuprate;2</oreDict>
+            <oreDict>solderItem;8</oreDict>
+            <oreDict>circuitBoardPlatinumBackedPlastic</oreDict>
+            <fluidStack>liquid_nitrogen;500</fluidStack>
+        </input>
+		<output>
+			<oreDict>perfectCircuitItem</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="900" power="256">
+		<input>
+			<oreDict>circuitPlateNANDMemory;12</oreDict>
+            <oreDict>circuitPlateRandomAccessMemory;4</oreDict>
+            <oreDict>wirePGMAny;2</oreDict>
+            <oreDict>solderItem;4</oreDict>
+            <oreDict>circuitBoardPlastic</oreDict>
+            <itemStack>mekanism:controlcircuit</itemStack>
+        </input>
+		<output>
+			<itemStack>advancedrocketry:dataunit</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="450" power="256">
+		<input>
+			<oreDict>circuitPlateRandomAccessMemory;4</oreDict>
+            <oreDict>circuitPlateIntegratedCircuit;1</oreDict>
+            <oreDict>circuitPlateNANDMemory</oreDict>
+            <itemStack>immersiveengineering:material;2;22</itemStack>
+            <oreDict>solderItem;4</oreDict>
+            <oreDict>circuitBoardPlastic</oreDict>
+        </input>
+		<output>
+			<itemStack>advancedrocketry:ic;1;1</itemStack>
+		</output>
+	</Recipe>
+
+	<Recipe timeRequired="1200" power ="1920">
+		<input>
+			<oreDict>waferGalliumDopedSilicon</oreDict>
+			<oreDict>lensGlass</oreDict>
+		</input>
+		<output>
+			<oreDict>waferIntegratedCircuit</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1200" power ="1920">
+		<input>
+			<oreDict>waferGalliumDopedSilicon</oreDict>
+			<oreDict>lensLapis</oreDict>
+		</input>
+		<output>
+			<oreDict>waferCentralProcessingUnit</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1200" power ="1920">
+		<input>
+			<oreDict>waferGalliumDopedSilicon</oreDict>
+			<oreDict>lensEmerald</oreDict>
+		</input>
+		<output>
+			<oreDict>waferNANDMemory</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1200" power ="1920">
+		<input>
+			<oreDict>waferGalliumDopedSilicon</oreDict>
+			<oreDict>lensDiamond</oreDict>
+		</input>
+		<output>
+			<oreDict>waferRandomAccessMemory</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1200" power ="1920">
+		<input>
+			<oreDict>waferLithiumDopedSilicon</oreDict>
+			<oreDict>lensGlass</oreDict>
+		</input>
+		<output>
+			<oreDict>waferIntegratedCircuit</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1200" power ="1920">
+		<input>
+			<oreDict>waferLithiumDopedSilicon</oreDict>
+			<oreDict>lensLapis</oreDict>
+		</input>
+		<output>
+			<oreDict>waferCentralProcessingUnit</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1200" power ="1920">
+		<input>
+			<oreDict>waferLithiumDopedSilicon</oreDict>
+			<oreDict>lensEmerald</oreDict>
+		</input>
+		<output>
+			<oreDict>waferNANDMemory</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1200" power ="1920">
+		<input>
+			<oreDict>waferLithiumDopedSilicon</oreDict>
+			<oreDict>lensDiamond</oreDict>
+		</input>
+		<output>
+			<oreDict>waferRandomAccessMemory</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1800" power ="3840">
+		<input>
+			<oreDict>waferLithiumDopedSilicon</oreDict>
+			<oreDict>lensEnderPearl</oreDict>
+		</input>
+		<output>
+			<oreDict>waferSystemOnChip</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="2400" power ="7680">
+		<input>
+			<oreDict>processorCrystalRaw</oreDict>
+			<oreDict>lensEnderPearl</oreDict>
+		</input>
+		<output>
+			<oreDict>processorCrystalEngraved</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="2400" power ="7680">
+		<input>
+			<oreDict>naquadahProcessorCrystalRaw</oreDict>
+			<oreDict>lensNetherStar</oreDict>
+		</input>
+		<output>
+			<oreDict>naquadahProcessorCrystalEngraved</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="2400" power ="7680">
+		<input>
+			<oreDict>dustIron;7</oreDict>
+			<oreDict>dustNeodymium</oreDict>
+            <oreDict>machineCasingSteelBarrelShell</oreDict>
+		</input>
+		<output>
+			<oreDict>machineCasingRareEarthsMagneticCoil</oreDict>
+		</output>
+	</Recipe>
+
+	<Recipe timeRequired="900" power="960">
+		<input>
+			<oreDict>fiberBasalt;36</oreDict>
+            <oreDict>scaffoldingSteel</oreDict>
+            <fluidStack>polyethene;750</fluidStack>
+        </input>
+		<output>
+			<oreDict>blockBasaltFiber</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="900" power="960">
+		<input>
+			<oreDict>fiberCarbon;36</oreDict>
+            <oreDict>scaffoldingSteel</oreDict>
+            <fluidStack>polyethene;750</fluidStack>
+        </input>
+		<output>
+			<oreDict>blockCarbonFiber</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="900" power="960">
+		<input>
+			<oreDict>fiberGraphene;36</oreDict>
+            <oreDict>frameMaragingSteel</oreDict>
+            <fluidStack>polyethene;750</fluidStack>
+        </input>
+		<output>
+			<oreDict>blockCarbonNanotube</oreDict>
+		</output>
+	</Recipe>
+
+
+
+	<Recipe timeRequired="19200" power="960">
+		<input>
+			<itemStack>endteleporters:ender_frame</itemStack>
+            <oreDict>gemEnderBiotite;6</oreDict>
+            <oreDict>stickTitaniumIridium;8</oreDict>
+            <itemStack>minecraft:nether_star</itemStack>
+            <oreDict>dustEnderPearl;16</oreDict>
+            <oreDict>sheetPlatinum;6</oreDict>
+        </input>
+		<output>
+			<itemStack>portalgun:item_miniature_black_hole</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="2400" power="7680">
+		<input>
+			<itemStack>contenttweaker:high_current_superconductive_coil</itemStack>
+            <oreDict>circuitUltimate;2</oreDict>
+            <oreDict>sheetSteel;8</oreDict>
+            <oreDict>stickMolybdenum;3</oreDict>
+            <itemStack>charm:ender_pearl_block</itemStack>
+            <oreDict>compressorAluminiumMagnesiumTitanide</oreDict>
+            <oreDict>smallPipeTitanium;4</oreDict>
+            <oreDict>mechanicalComponentMaragingSteel;2</oreDict>
+            <itemStack>portalgun:item_miniature_black_hole</itemStack>
+        </input>
+		<output>
+			<itemStack>gravitygun:gravitygun</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="2400" power="7680">
+		<input>
+			<itemStack>contenttweaker:high_current_superconductive_coil;2</itemStack>
+            <oreDict>perfectCircuitItem;4</oreDict>
+            <oreDict>sheetTitaniumIridium;12</oreDict>
+            <oreDict>stickMolybdenum;7</oreDict>
+            <itemStack>portalgun:item_miniature_black_hole</itemStack>
+            <oreDict>smallPipeTitanium;4</oreDict>
+            <oreDict>mechanicalComponentMaragingSteel;2</oreDict>
+            <oreDict>enderpearl;8</oreDict>
+            <oreDict>compressorAluminiumMagnesiumTitanide</oreDict>
+        </input>
+		<output>
+			<itemStack>portalgun:item_portalgun</itemStack>
+		</output>
+	</Recipe>
+
+
+	<Recipe timeRequired="675" power="16384">
+		<input>
+			<oreDict>grapheneProcessorCrystalEngraved</oreDict>
+            <itemStack>mekanism:polyethene;1;2</itemStack>
+            <oreDict>smdResistor;2</oreDict>
+            <oreDict>wireYttriumBariumCuprate;2</oreDict>
+            <oreDict>solderItem;8</oreDict>
+            <oreDict>circuitBoardPlatinumBackedPlastic;2</oreDict>
+            <fluidStack>liquid_nitrogen;500</fluidStack>
+        </input>
+		<output>
+			<oreDict>circuitCryptographic</oreDict>
+		</output>
+	</Recipe>
+
+	<Recipe timeRequired="450" power="240">
+		<input>
+			<oreDict>circuitPlateIntegratedCircuit;4</oreDict>
+            <itemStack>immersiveengineering:wirecoil;4;5</itemStack>
+            <oreDict>solderItem;4</oreDict>
+            <oreDict>circuitBoardPlastic</oreDict>
+        </input>
+		<output>
+			<itemStack>logisticspipes:chip_fpga;8</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="450" power="240">
+		<input>
+			<oreDict>circuitPlateIntegratedCircuit;4</oreDict>
+            <oreDict>wireElectrum;2</oreDict>
+            <oreDict>solderItem;4</oreDict>
+            <oreDict>circuitBoardPlastic</oreDict>
+        </input>
+		<output>
+			<itemStack>logisticspipes:chip_basic;4</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="450" power="240">
+		<input>
+			<oreDict>circuitPlateCentralProcessingUnit;4</oreDict>
+            <oreDict>wireSilver;2</oreDict>
+            <oreDict>solderItem;4</oreDict>
+            <oreDict>circuitBoardPlastic</oreDict>
+        </input>
+		<output>
+			<itemStack>logisticspipes:chip_advanced;4</itemStack>
+		</output>
+	</Recipe>
+
+	<Recipe timeRequired="675" power="3840">
+		<input>
+			<oreDict>grapheneProcessorCrystalEngraved</oreDict>
+            <oreDict>gpsUnitItem;2</oreDict>
+            <oreDict>smdResistor;2</oreDict>
+            <oreDict>wireSuperconductingAny;2</oreDict>
+            <oreDict>solderItem;8</oreDict>
+            <oreDict>circuitBoardPlatinumBackedPlastic</oreDict>
+            <fluidStack>liquid_helium;125</fluidStack>
+        </input>
+		<output>
+			<itemStack>mekanism:controlcircuit;1;3</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="675" power="15360">
+		<input>
+			<oreDict>grapheneProcessorCrystalEngraved</oreDict>
+            <oreDict>gpsUnitItem;2</oreDict>
+            <oreDict>smdResistor;2</oreDict>
+            <oreDict>wireMischmetal;2</oreDict>
+            <oreDict>solderItem;8</oreDict>
+            <oreDict>circuitBoardPlatinumBackedPlastic</oreDict>
+            <fluidStack>liquid_helium;500</fluidStack>
+        </input>
+		<output>
+			<oreDict>perfectCircuitItem</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="675" power="4096">
+		<input>
+			<oreDict>processorCrystalEngraved</oreDict>
+            <oreDict>gpsUnitItem;2</oreDict>
+            <oreDict>smdResistor;2</oreDict>
+            <oreDict>wireNiobiumTitaniumAlloy;2</oreDict>
+            <oreDict>solderItem;8</oreDict>
+            <oreDict>circuitBoardPlatinumBackedPlastic</oreDict>
+            <fluidStack>liquid_helium;125</fluidStack>
+        </input>
+		<output>
+			<itemStack>mekanism:controlcircuit;1;3</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="675" power="16384">
+		<input>
+			<oreDict>naquadahProcessorCrystalEngraved</oreDict>
+            <oreDict>gpsUnitItem;2</oreDict>
+            <oreDict>smdResistor;2</oreDict>
+            <oreDict>wireNiobiumTitaniumAlloy;2</oreDict>
+            <oreDict>solderItem;16</oreDict>
+            <oreDict>circuitBoardPlatinumBackedPlastic;2</oreDict>
+            <fluidStack>liquid_helium;250</fluidStack>
+        </input>
+		<output>
+			<itemStack>mekanism:controlcircuit;2;3</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="675" power="16384">
+		<input>
+			<oreDict>naquadahProcessorCrystalEngraved</oreDict>
+            <oreDict>gpsUnitItem;2</oreDict>
+            <oreDict>smdResistor;2</oreDict>
+            <oreDict>wireYttriumBariumCuprate;2</oreDict>
+            <oreDict>solderItem;8</oreDict>
+            <oreDict>circuitBoardPlatinumBackedPlastic</oreDict>
+            <fluidStack>liquid_helium;500</fluidStack>
+        </input>
+		<output>
+			<oreDict>perfectCircuitItem</oreDict>
+		</output>
+	</Recipe>
+</Recipes>

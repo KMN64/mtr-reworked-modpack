@@ -1,0 +1,13 @@
+{
+    "parent": "libvulpes:block/tintedCube",
+    "textures":
+    {
+        "particle": "libvulpes:blocks/block",
+        "down": "libvulpes:blocks/block",
+        "up": "libvulpes:blocks/block",
+        "north": "libvulpes:blocks/block",
+        "east": "libvulpes:blocks/block",
+        "south": "libvulpes:blocks/block",
+        "west": "libvulpes:blocks/block"
+    }
+}

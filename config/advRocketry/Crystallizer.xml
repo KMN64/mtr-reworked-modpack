@@ -1,0 +1,136 @@
+<!-->
+	IMPORTANT NOTICE TO MODPACK MAKERS!!!!
+	
+	XML recipes are being DEPRECATED soon.
+	This means that recipes registered via the XML for MACHINES will no longer work
+	To avoid issues that may arise from this, please either distribute a RESOURCE PACK
+	with relevant JSON recipes OR user Craft tweaker + Advanced rocketry tweaker (3rd party)
+	https://minecraft.curseforge.com/projects/advanced-rocketry-tweaker
+	
+	IMPORTANT NOTICE TO MODPACK MAKERS!!!!
+	
+	
+	<Recipe timeRequired="NUMBER" power="NUMBER">
+		<input>
+			<fluidStack>FLUID NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+        </input>
+		<output>
+			<fluidStack>FLUID_NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+		</output>
+	</Recipe>
+	
+	Can have Multiple In/Outputs
+	Some Machines can only Accept either Fluids or Items
+	
+	timeRequired="NUMBER"	how long a Recipe takes, Unit is in Ticks.
+	power="NUMBER" how much Power the Recipes takes per Tick. Unit is in RF.
+	
+	The "useDefault" attribute will prevent loading of recipes if set to "false"
+<!-->
+<Recipes useDefault="false">
+	<Recipe timeRequired="2400" power="1920">
+		<input>
+			<oreDict>dustSilicon;64</oreDict>
+            <oreDict>dustGold;4</oreDict>
+            <fluidStack>nitrogen;4000</fluidStack>
+        </input>
+		<output>
+			<oreDict>bouleGoldDopedSilicon</oreDict>
+            <fluidStack>nitrogen;3500</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="2400" power="1920">
+		<input>
+			<oreDict>dustSilicon;64</oreDict>
+            <oreDict>dustLithium;4</oreDict>
+            <fluidStack>nitrogen;4000</fluidStack>
+        </input>
+		<output>
+			<oreDict>bouleLithiumDopedSilicon</oreDict>
+            <fluidStack>nitrogen;3500</fluidStack>
+		</output>
+    </Recipe>
+		<Recipe timeRequired="2400" power="1920">
+		<input>
+			<oreDict>dustSilicon;64</oreDict>
+            <oreDict>dustGallium;4</oreDict>
+            <fluidStack>nitrogen;4000</fluidStack>
+        </input>
+		<output>
+			<oreDict>bouleGalliumDopedSilicon</oreDict>
+            <fluidStack>nitrogen;3500</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="3600" power="7680">
+		<input>
+			<itemStack>contenttweaker:hop_graphite_dust_block;8</itemStack>
+            <oreDict>dustGold;8</oreDict>
+            <fluidStack>helium;4000</fluidStack>
+        </input>
+		<output>
+			<oreDict>grapheneProcessorCrystalRaw;16</oreDict>
+            <fluidStack>helium;3900</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="3600" power="1920">
+		<input>
+			<itemStack>contenttweaker:hop_graphite_dust_block</itemStack>
+            <fluidStack>methane;3200</fluidStack>
+            <fluidStack>helium;4000</fluidStack>
+        </input>
+		<output>
+			<oreDict>fiberGraphene;32</oreDict>
+            <fluidStack>hydrogen;12800</fluidStack>
+            <fluidStack>helium;3900</fluidStack>
+		</output>
+	</Recipe>
+
+
+    <Recipe timeRequired="3600" power="8192">
+		<input>
+			<oreDict>dustEmerald;64</oreDict>
+            <oreDict>dustOsmium;2</oreDict>
+            <fluidStack>helium;16000</fluidStack>
+        </input>
+		<output>
+			<oreDict>processorCrystalRaw;16</oreDict>
+            <fluidStack>helium;15800</fluidStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="3600" power="8192">
+		<input>
+			<oreDict>dustEnrichedNaquadah;64</oreDict>
+            <oreDict>dustBarium;4</oreDict>
+            <fluidStack>helium3;16000</fluidStack>
+        </input>
+		<output>
+			<oreDict>naquadahProcessorCrystalRaw;16</oreDict>
+            <fluidStack>helium3;15800</fluidStack>
+		</output>
+	</Recipe>
+
+	<Recipe timeRequired="2400" power="1920">
+		<input>
+            <oreDict>dustDilithium;64</oreDict>
+            <fluidStack>nitrogen;4000</fluidStack>
+        </input>
+		<output>
+			<oreDict>gemDilithium</oreDict>
+            <fluidStack>nitrogen;3500</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="2400" power="1920">
+		<input>
+            <oreDict>dustDilithium;64</oreDict>
+            <fluidStack>helium;4000</fluidStack>
+        </input>
+		<output>
+			<oreDict>gemDilithium</oreDict>
+            <fluidStack>helium;3500</fluidStack>
+		</output>
+	</Recipe>
+</Recipes>

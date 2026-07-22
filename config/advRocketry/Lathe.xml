@@ -1,0 +1,252 @@
+<!-->
+	IMPORTANT NOTICE TO MODPACK MAKERS!!!!
+	
+	XML recipes are being DEPRECATED soon.
+	This means that recipes registered via the XML for MACHINES will no longer work
+	To avoid issues that may arise from this, please either distribute a RESOURCE PACK
+	with relevant JSON recipes OR user Craft tweaker + Advanced rocketry tweaker (3rd party)
+	https://minecraft.curseforge.com/projects/advanced-rocketry-tweaker
+	
+	IMPORTANT NOTICE TO MODPACK MAKERS!!!!
+	
+	
+	<Recipe timeRequired="NUMBER" power="NUMBER">
+		<input>
+			<fluidStack>FLUID NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+        </input>
+		<output>
+			<fluidStack>FLUID_NAME;SIZE</fluidStack>
+			<itemStack>ITEM_NAME;SIZE;META</itemStack>
+			<oreDict>OREDICT_NAME;SIZE</oreDict>
+		</output>
+	</Recipe>
+	
+	Can have Multiple In/Outputs
+	Some Machines can only Accept either Fluids or Items
+	
+	timeRequired="NUMBER"	how long a Recipe takes, Unit is in Ticks.
+	power="NUMBER" how much Power the Recipes takes per Tick. Unit is in RF.
+	
+	The "useDefault" attribute will prevent loading of recipes if set to "false"
+<!-->
+<Recipes useDefault="false">
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotAluminum</oreDict>
+		</input>
+		<output>
+			<oreDict>stickAluminum;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotIron</oreDict>
+		</input>
+		<output>
+			<oreDict>stickIron;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotUranium</oreDict>
+		</input>
+		<output>
+			<oreDict>stickUranium;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotTungsten</oreDict>
+		</input>
+		<output>
+			<oreDict>stickTungsten;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotTitanium</oreDict>
+		</input>
+		<output>
+			<oreDict>stickTitanium;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotLead</oreDict>
+		</input>
+		<output>
+			<oreDict>stickLead;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotCopper</oreDict>
+		</input>
+		<output>
+			<oreDict>stickCopper;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotSilverIndiumAlloy</oreDict>
+		</input>
+		<output>
+			<oreDict>stickSilverIndiumAlloy;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotGold</oreDict>
+		</input>
+		<output>
+			<oreDict>stickGold;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotTitaniumAluminide</oreDict>
+		</input>
+		<output>
+			<oreDict>stickTitaniumAluminide;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotSteel</oreDict>
+		</input>
+		<output>
+			<oreDict>stickSteel;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotMaragingSteel</oreDict>
+		</input>
+		<output>
+			<oreDict>stickMaragingSteel;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotElectrum</oreDict>
+		</input>
+		<output>
+			<oreDict>stickElectrum;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotSilver</oreDict>
+		</input>
+		<output>
+			<oreDict>stickSilver;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotNickel</oreDict>
+		</input>
+		<output>
+			<oreDict>stickNickel;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotIridium</oreDict>
+		</input>
+		<output>
+			<oreDict>stickIridium;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotTitaniumIridium</oreDict>
+		</input>
+		<output>
+			<oreDict>stickTitaniumIridium;2</oreDict>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotAdvancedElectronicAlloy</oreDict>
+		</input>
+		<output>
+			<oreDict>stickAdvancedElectronicAlloy;2</oreDict>
+		</output>
+	</Recipe>
+    
+	<Recipe timeRequired="900" power="192">
+		<input>
+			<oreDict>plateGlass</oreDict>
+        </input>
+		<output>
+			<oreDict>lensGlass</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="900" power="192">
+		<input>
+			<oreDict>plateLapis</oreDict>
+        </input>
+		<output>
+			<oreDict>lensLapis</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="900" power="192">
+		<input>
+			<oreDict>plateDiamond</oreDict>
+        </input>
+		<output>
+			<oreDict>lensDiamond</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="900" power="192">
+		<input>
+			<oreDict>plateRuby</oreDict>
+        </input>
+		<output>
+			<oreDict>lensRuby</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="900" power="192">
+		<input>
+			<oreDict>plateEmerald</oreDict>
+        </input>
+		<output>
+			<oreDict>lensEmerald</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="900" power="192">
+		<input>
+			<oreDict>plateEnderPearl</oreDict>
+        </input>
+		<output>
+			<oreDict>lensEnderPearl</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="900" power="192">
+		<input>
+			<oreDict>netherStar</oreDict>
+        </input>
+		<output>
+			<oreDict>lensNetherStar</oreDict>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="1200" power="60">
+		<input>
+			<oreDict>blockGlassColorless</oreDict>
+        </input>
+		<output>
+			<itemStack>advancedrocketry:blocklens</itemStack>
+		</output>
+	</Recipe>
+    <Recipe timeRequired="150" power="240">
+		<input>
+			<oreDict>mechanicalComponentSteel</oreDict>
+        </input>
+		<output>
+			<itemStack>immersiveengineering:toolupgrade;1;7</itemStack>
+		</output>
+	</Recipe>
+</Recipes>

@@ -1,0 +1,19 @@
+{
+    "machine": "fission_reactor_heat_exchanger",
+    "registryName": "pebble_bed_heat_exchanger",
+    "recipeTime": 1,
+    "requirements": [
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "helium",
+            "amount": 2560
+        },
+        {
+            "type": "fluid",
+            "io-type": "output",
+            "fluid": "heatedhelium",
+            "amount": 2560
+        }
+    ]
+}
