@@ -1,0 +1,30 @@
+{
+    "machine": "naquadah_reactor",
+    "registryName": "naquadah_reactor_nominal",
+    "recipeTime": 1,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 960
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:material_part@122",
+            "amount": 9
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "distwater",
+            "amount": 5600
+        },
+        {
+            "type": "fluid",
+            "io-type": "output",
+            "fluid": "superheatedwater",
+            "amount": 5600
+        }
+    ]
+}

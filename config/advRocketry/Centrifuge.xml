@@ -235,4 +235,25 @@
             <fluidStack>carbon_dioxide;100</fluidStack>
 		</output>
 	</Recipe>
+
+	<Recipe timeRequired="12000" power="3072">
+		<input>
+			<oreDict>dustNaquadah;5</oreDict>
+			<fluidStack>helium;1200</fluidStack>
+        </input>
+		<output>
+			<oreDict>dustEnrichedNaquadah;5</oreDict>
+			<fluidStack>helium;1200</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="12000" power="3072">
+		<input>
+			<oreDict>dustNaquadah;5</oreDict>
+			<fluidStack>nitrogen;1200</fluidStack>
+        </input>
+		<output>
+			<oreDict>dustEnrichedNaquadah;5</oreDict>
+			<fluidStack>nitrogen;1200</fluidStack>
+		</output>
+	</Recipe>
 </Recipes>
