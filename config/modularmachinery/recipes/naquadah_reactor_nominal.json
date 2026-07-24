@@ -6,7 +6,7 @@
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 90
+            "energyPerTick": 144
         },
         {
             "type": "item",

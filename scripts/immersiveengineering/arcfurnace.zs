@@ -14,7 +14,8 @@ ArcFurnace.addRecipe(<mekanism:ingot:2> * 4, <ore:ingotEquivalentTin>, null, 300
 ArcFurnace.addRecipe(<ore:ingotNiobiumTitaniumAlloy>.firstItem * 2, <ore:dustNiobium>, null, 200, 512, [<ore:ingotEquivalentTitanium>], "Alloying & Steelmaking");
 ArcFurnace.addRecipe(<ore:ingotZirconiumNiobiumAlloy>.firstItem * 40, <ore:dustNiobium>, null, 8000, 512, [<ore:dustZirconium> * 39], "Alloying & Steelmaking");
 ArcFurnace.addRecipe(<ore:ingotSilverIndiumAlloy>.firstItem * 5, <ore:dustIndium>, null, 1000, 512, [<ore:ingotEquivalentSilver> * 4], "Alloying & Steelmaking");
-ArcFurnace.addRecipe(<advancedrocketry:productingot:0> * 4, <ore:ingotEquivalentAluminum>, null, 1600, 768, [<ore:ingotEquivalentTitanium> * 3], "Alloying & Steelmaking");
+ArcFurnace.addRecipe(<advancedrocketry:productingot:0> * 12, <ore:ingotEquivalentTitanium>, null, 2400, 768, [<ore:ingotEquivalentAluminum> * 8, <ore:dustMagnesium> * 3], "Alloying & Steelmaking");
+ArcFurnace.addRecipe(<ore:ingotTitaniumAluminide>.firstItem * 4, <ore:ingotEquivalentAluminum>, null, 1600, 768, [<ore:ingotEquivalentTitanium> * 3], "Alloying & Steelmaking");
 ArcFurnace.addRecipe(<ore:ingotMaragingSteel>.firstItem * 20, <ore:ingotEquivalentTitanium>, null, 4000, 512, [<ore:ingotEquivalentIron> * 13, <ore:ingotEquivalentNickel> * 4, <ore:dustCobalt> * 2], "Alloying & Steelmaking");
 ArcFurnace.addRecipe(<advancedrocketry:productingot:1> * 2, <ore:ingotEquivalentIridium>, null, 800, 1024, [<ore:ingotEquivalentTitanium>], "Alloying & Steelmaking");
 ArcFurnace.addRecipe(<ore:ingotTungstensteel>.firstItem * 2, <ore:ingotEquivalentSteel>, null, 800, 1024, [<ore:ingotEquivalentTungsten>], "Alloying & Steelmaking");
