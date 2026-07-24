@@ -1,0 +1,186 @@
+# ----------------------------------------------------------- #
+# ########################################################### #
+#                ### lush_caves.cave Info ###                 #
+# ########################################################### #
+#   This preset is designed to demonstrate a basic use case   #
+# for this mod. It is a descendant of a modified tunnels and  #
+# spirals preset. It makes lush caves with large amounts of   #
+# greenery similar to the first screenshot of 1.17 lush caves #
+# ----------------------------------------------------------- #
+{
+  # Whether the preset is enabled globally.
+  enabled: true
+  #We don't want spirals in any biomes with ocean features, because they then (can) cause problems
+  biomes: {
+    types: [ "OCEAN" ]
+  }
+  #We only want these caves in the overworld because only the overworld would support them
+  dimensions: [ 0 ]
+  #Replace more blocks than usual
+  replaceableBlocks: [ "stone", "dirt", "sand", "sandstone", "hardened_clay", "stained_hardened_clay", "stained_hardened_clay:1", "stained_hardened_clay:4", "stained_hardened_clay:7", "stained_hardened_clay:8", "stained_hardened_clay:9", "stained_hardened_clay:12", "stained_hardened_clay:14", "stained_hardened_clay:15" ]
+  #Add some greenery to the floor
+  wallDecorators: [
+    #Water patches
+    {
+      states: water
+      directions: down
+      matchers: [ "stone", "dirt", "sandstone", "sand", "packed_ice", "snow", "hardened_clay", "stained_hardened_clay", "stained_hardened_clay:1", "stained_hardened_clay:4", "stained_hardened_clay:7", "stained_hardened_clay:8", "stained_hardened_clay:9", "stained_hardened_clay:12", "stained_hardened_clay:14", "stained_hardened_clay:15", "cobblestone" ]
+      height: [ 32, 40 ]
+      noise: { frequency: 0.075 }
+      placement: EMBED
+    }
+    #Fix water patches
+    {
+      states: stone
+      directions: side
+      matchers: water
+      height: [ 32, 40 ]
+      integrity: 0.9
+      placement: EMBED
+    }
+    #Bottom variation, coarse dirt, grass, and mossy cobble
+    {
+      states: grass
+      matchers: [ "stone", "dirt", "sandstone", "sand", "packed_ice", "snow", "hardened_clay", "stained_hardened_clay", "stained_hardened_clay:1", "stained_hardened_clay:4", "stained_hardened_clay:7", "stained_hardened_clay:8", "stained_hardened_clay:9", "stained_hardened_clay:12", "stained_hardened_clay:14", "stained_hardened_clay:15", "cobblestone" ]
+      directions: down
+      height: [ 32, 52 ]
+      integrity: 0.5
+      placement: EMBED
+    }
+    {
+      states: dirt:1
+      matchers: [ "stone", "dirt", "sandstone", "sand", "packed_ice", "snow", "hardened_clay", "stained_hardened_clay", "stained_hardened_clay:1", "stained_hardened_clay:4", "stained_hardened_clay:7", "stained_hardened_clay:8", "stained_hardened_clay:9", "stained_hardened_clay:12", "stained_hardened_clay:14", "stained_hardened_clay:15", "cobblestone" ]
+      directions: down
+      height: [ 32, 52 ]
+      integrity: 0.2
+      placement: EMBED
+    }
+    {
+      states: mossy_cobblestone
+      matchers: [ "stone", "dirt", "sandstone", "sand", "packed_ice", "snow", "hardened_clay", "stained_hardened_clay", "stained_hardened_clay:1", "stained_hardened_clay:4", "stained_hardened_clay:7", "stained_hardened_clay:8", "stained_hardened_clay:9", "stained_hardened_clay:12", "stained_hardened_clay:14", "stained_hardened_clay:15", "cobblestone" ]
+      directions: down
+      height: [ 32, 52 ]
+      integrity: 0.2
+      placement: EMBED
+    }
+    {
+      states: water
+      matchers: [ "stone", "dirt", "sandstone", "sand", "packed_ice", "snow", "hardened_clay", "stained_hardened_clay", "stained_hardened_clay:1", "stained_hardened_clay:4", "stained_hardened_clay:7", "stained_hardened_clay:8", "stained_hardened_clay:9", "stained_hardened_clay:12", "stained_hardened_clay:14", "stained_hardened_clay:15", "cobblestone" ]
+      directions: down
+      height: [ 32, 52 ]
+      integrity: 0.075
+      placement: EMBED
+    }
+    #Vegetation blocks this time
+    # Spawns extra ferns on the ground.
+    {
+      states: tallgrass:2
+      directions: down
+      matchers: grass
+      height: [ 32, 52 ]
+      integrity: 0.05
+      placement: OVERLAY
+    }
+    # Extra tall grass on the ground.
+    {
+      states: tallgrass:1
+      directions: down
+      matchers: grass
+      height: [ 32, 52 ]
+      integrity: 0.2
+      placement: OVERLAY
+    }
+    # Glowflowers for light
+    {
+      states: biomesoplenty:flower_0:3
+      directions: down
+      matchers: grass
+      height: [ 32, 52 ]
+      integrity: 0.05
+      placement: OVERLAY
+    }
+    # Mushrooms
+    {
+      states: [ "red_mushroom", "brown_mushroom" ]
+      directions: down
+      matchers: [ "grass", "stone" ]
+      height: [ 32, 52 ]
+      integrity: 0.02
+      placement: OVERLAY
+    }
+    # Lily Pads
+    {
+      states: [ "minecraft:waterlily", "biomesoplenty:waterlily:0", "biomesoplenty:waterlily:1", "biomesoplenty:waterlily:2", "biomesoplenty:waterlily:3" ]
+      directions: down
+      matchers: water
+      height: [ 32, 52 ]
+      integrity: 0.025
+      placement: OVERLAY
+    }
+    # Hanging leaves
+    {
+      states: leaves:4
+      matchers: [ "stone", "dirt", "sandstone", "sand", "packed_ice", "snow", "hardened_clay", "stained_hardened_clay", "stained_hardened_clay:1", "stained_hardened_clay:4", "stained_hardened_clay:7", "stained_hardened_clay:8", "stained_hardened_clay:9", "stained_hardened_clay:12", "stained_hardened_clay:14", "stained_hardened_clay:15", "cobblestone" ]
+      directions: up
+      height: [ 32, 56 ]
+      integrity: 0.5
+      placement: OVERLAY
+    }
+    # Hanging glowshroom
+    {
+      states: quark:glowshroom_block:14
+      matchers: [ "stone", "dirt", "sandstone", "sand", "packed_ice", "snow", "hardened_clay", "stained_hardened_clay", "stained_hardened_clay:1", "stained_hardened_clay:4", "stained_hardened_clay:7", "stained_hardened_clay:8", "stained_hardened_clay:9", "stained_hardened_clay:12", "stained_hardened_clay:14", "stained_hardened_clay:15", "cobblestone" ]
+      directions: up
+      height: [ 32, 56 ]
+      integrity: 0.03125
+      placement: OVERLAY
+    }
+    # Make those cave walls a little more interesting
+    # Cobblestone
+    {
+      states: cobblestone
+      directions: side
+      matchers: [ "stone" ]
+      height: [ 32, 52 ]
+      integrity: 0.1
+      placement: EMBED
+    }
+  ]
+  #Curvy tunnels, but not too curvy or perfect. Add some variation in those spirals
+  tunnels: {
+    #One tunnel going down, then a single large room that always spawns
+    systemChance: 1
+    systemDensity: 1
+    noiseYReduction: false
+    distance: 128
+    dYaw: {
+      factor: 1
+      randFactor: 0.375
+      startVal: 1.25
+    }
+    dPitch: {
+      factor: 1
+      randFactor: 0
+    }
+    pitch: {
+      startVal: 1
+      startValRandFactor: 0
+    }
+    scale: {
+      factor: 0.125
+      randFactor: 0.125
+      startVal: 1.5
+      startValRandFactor: 1
+    }
+    rooms: {
+      scale: 16
+      stretch: 0.375
+      chance: 1
+    }
+    originHeight: [ 40, 52 ]
+    chance: 0.03125
+    count: 2
+  }
+  blacklistBiomes: true
+  blacklistDimensions: false
+}

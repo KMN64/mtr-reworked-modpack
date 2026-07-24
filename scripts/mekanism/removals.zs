@@ -111,10 +111,9 @@ removeAndHide(<mekanism:obsidiantnt>);
 //Remove gas upgrades, use the full amount and produce it, no skimping here
 removeAndHide(<mekanism:gasupgrade>);
 
-//Remove unrealistic item->gas conversions, readd osmium->gas conversion
+//Remove unrealistic item->gas conversions
 //Because seriously, who took a look at flint and said "you know what? you can get pure O2 out of that super easily"
 GasConversion.unregisterAll();
-GasConversion.register(<ore:ingotOsmium>, <gas:liquidosmium> * 200);
 
 //Remove handcrafting of HDPE and move it to plastic extruder
 removeAndHide(<mekanism:polyethene:1>);
@@ -122,6 +121,19 @@ recipes.remove(<mekanism:polyethene:*>);
 
 //Remove unused gasses & unused fluids - this is all Mekanism stuff because NOTHING HAS %@@#$@ BUCKETS
 //Double-removals, where I need neither
+hide(<ceramics:clay_bucket>.withTag({FluidName: "liquidsodium", Amount: 1000}));
+hide(<ceramics:clay_bucket>.withTag({FluidName: "liquidchlorine", Amount: 1000}));
+hide(<ceramics:clay_bucket>.withTag({FluidName: "liquidhydrogen", Amount: 1000}));
+hide(<ceramics:clay_bucket>.withTag({FluidName: "liquidoxygen", Amount: 1000}));
+hide(<ceramics:clay_bucket>.withTag({FluidName: "liquiddeuterium", Amount: 1000}));
+hide(<ceramics:clay_bucket>.withTag({FluidName: "liquidtritium", Amount: 1000}));
+hide(<ceramics:clay_bucket>.withTag({FluidName: "liquidsulfurdioxide", Amount: 1000}));
+hide(<ceramics:clay_bucket>.withTag({FluidName: "liquidsulfurtrioxide", Amount: 1000}));
+hide(<ceramics:clay_bucket>.withTag({FluidName: "liquidlithium", Amount: 1000}));
+hide(<ceramics:clay_bucket>.withTag({FluidName: "liquidethene", Amount: 1000}));
+hide(<ceramics:clay_bucket>.withTag({FluidName: "liquidfusionfuel", Amount: 1000}));
+hide(<ceramics:clay_bucket>.withTag({FluidName: "sulfuricacid", Amount: 1000}));
+
 hide(<liquid:liquidsodium>);
 hide(<liquid:liquidchlorine>);
 hide(<liquid:liquidhydrogen>);
@@ -135,5 +147,7 @@ hide(<liquid:liquidethene>);
 hide(<liquid:liquidfusionfuel>);
 hide(<liquid:sulfuricacid>);
 hide(<forge:bucketfilled>.withTag({FluidName: "liquidlithium", Amount: 1000}));
+hide(<ceramics:clay_bucket>.withTag({fluids: {FluidName: "liquidlithium", Amount: 1000}}));
 hide(<forge:bucketfilled>.withTag({FluidName: "heat", Amount: 1000}));
+hide(<ceramics:clay_bucket>.withTag({fluids: {FluidName: "heat", Amount: 1000}}));
 hide(<liquid:heat>);

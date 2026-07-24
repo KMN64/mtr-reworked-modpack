@@ -1,0 +1,39 @@
+{
+  # Whether the preset is enabled globally.
+  enabled: true
+  #We don't want spirals in any biomes with ocean features, because they then (can) cause problems
+  biomes: {
+    types: [ "OCEAN" ]
+  }
+  #We only want these caves in the overworld because only the overworld would support them
+  dimensions: [ 0 ]
+  #Replace more blocks than usual
+  replaceableBlocks: [ "stone", "dirt", "sand", "sandstone", "hardened_clay", "stained_hardened_clay", "stained_hardened_clay:1", "stained_hardened_clay:4", "stained_hardened_clay:7", "stained_hardened_clay:8", "stained_hardened_clay:9", "stained_hardened_clay:12", "stained_hardened_clay:14", "stained_hardened_clay:15" ]
+  tunnels: {
+    systemChance: 0.00010
+    systemDensity: 1
+    noiseYReduction: false
+    distance: 320
+    dYaw: {
+      factor: 1
+      randFactor: 0.375
+      startVal: 1.25
+    }
+    dPitch: {
+      factor: 1
+      randFactor: 0
+    }
+    pitch: {
+      startVal: 1
+      startValRandFactor: 0
+    }
+    scale: {
+      randFactor: 0.125
+    }
+    originHeight: [ 12, 20 ]
+    chance: 0.075
+    count: 2
+  }
+  blacklistBiomes: true
+  blacklistDimensions: false
+}

@@ -40,6 +40,14 @@
 			<itemStack>minecraft:hardened_clay;12</itemStack>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="100" power ="6144">
+		<input>
+			<itemStack>ceramics:clay_soft;12</itemStack>
+		</input>
+		<output>
+			<itemStack>ceramics:porcelain;12</itemStack>
+		</output>
+	</Recipe>
     <Recipe timeRequired="100" power ="6144">
 		<input>
 			<itemStack>minecraft:quartz_block;12</itemStack>

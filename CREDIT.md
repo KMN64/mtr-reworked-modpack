@@ -1,3 +1,7 @@
+# Modpack
+This modpack is originally made by voidsong-dragonfly
+
+# Textures
 <p>GPS Unit & Circuit Blueprints are kitbashed from Mekanism textures, created by CyanideX</p>
 <p>Perfect Circuit texture and Induction Tablet textures are also from Mekanism textures, created by CyanideX</p>
 
