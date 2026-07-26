@@ -27,6 +27,7 @@ DieselHandler.addDrillFuel(<liquid:gasoline>);
 //Turbine processs buckets/tick to give larger expansion ratio
 SteamTurbine.addFuel(<liquid:exhauststeam> * 2000, <liquid:steam> * 2000, 1);
 HighPressureSteamTurbine.addFuel(<liquid:steam> * 4000, <liquid:highpressuresteam> * 2000, 1);
+HighPressureSteamTurbine.addFuel(<liquid:mercuryvapor> * 2000, <liquid:heatedmercury> * 2000, 1);
 
 //Gas Turbine fuels to IRL energy ratios
 GasTurbine.addFuel(<liquid:fluegas> * 16000, <liquid:refinerygas> * 220, 10);
@@ -44,10 +45,12 @@ GasTurbine.addFuel(<liquid:fluegas> * 16000, <liquid:hydrogen> * 850, 10);
 //Boiler
 Boiler.addRecipe(<liquid:steam> * 9000, <liquid:water> * 250, 10);
 Boiler.addRecipe(<liquid:steam> * 10000, <liquid:distwater> * 250, 10);
+Boiler.addRecipe(<liquid:heatedmercury> * 10000, <liquid:mercury> * 10000, 10);
 //Solar tower
 SolarTower.addRecipe(<liquid:steam> * 9000, <liquid:water> * 250, 20);
 SolarTower.addRecipe(<liquid:steam> * 10000, <liquid:distwater> * 250, 20);
 SolarTower.addRecipe(<liquid:superheatedmoltensodium> * 3200, <liquid:moltensodium> * 3200, 20);
+SolarTower.addRecipe(<liquid:heatedmercury> * 10000, <liquid:mercury> * 10000, 20);
 //Radiator can take 10x the steam
 Radiator.addRecipe(<liquid:distwater> * 125, <liquid:exhauststeam> * 10000, 40);
 
@@ -68,6 +71,7 @@ Boiler.addFuel(<liquid:creosote> * 80, 10, 10);
 HeatExchanger.addRecipe(<liquid:steam> * 10000, null, <liquid:distwater> * 250, <liquid:fluegas> * 16000, 320, 10);
 HeatExchanger.addRecipe(<liquid:steam> * 10000, <liquid:pahoehoelava> * 2400, <liquid:distwater> * 250, <liquid:lava> * 2400, 320, 10);
 HeatExchanger.addRecipe(<liquid:steam> * 10000, <liquid:moltensodium> * 3200, <liquid:distwater> * 250, <liquid:superheatedmoltensodium> * 3200, 320, 10);
+HeatExchanger.addRecipe(<liquid:steam> * 10000, <liquid:mercury> * 10000, <liquid:distwater> * 500, <liquid:mercuryvapor> * 10000, 320, 10);
 HeatExchanger.addRecipe(<liquid:steam> * 10000, <liquid:helium> * 2560, <liquid:distwater> * 250, <liquid:heatedhelium> * 2560, 320, 10);
 HeatExchanger.addRecipe(<liquid:highpressuresteam> * 10000, <liquid:distwater> * 10000, <liquid:distwater> * 500, <liquid:superheatedwater> * 10000, 320, 10);
 HeatExchanger.addRecipe(<liquid:distwater> * 250, <liquid:hotwater> * 4500, <liquid:exhauststeam> * 10000, <liquid:water> * 4500, 160, 5);

@@ -247,7 +247,16 @@ biome_changer.addItemInput(<mekanism:controlcircuit:3> * 4);
 biome_changer.addItemInput(<ore:mechanicalComponentSteel>, 2);
 biome_changer.addItemOutput(<advancedrocketry:satelliteprimaryfunction:5>);
 biome_changer.build();
-
+var weather_controller = newBuilder("weather_controller", "assembly_cleanroom", 900);
+weather_controller.addEnergyPerTickInput(1024);
+weather_controller.addItemInput(<libvulpes:productrod:7> * 2);
+weather_controller.addItemInput(<ore:wireTungsten>, 8);
+weather_controller.addItemInput(<advancedrocketry:productsheet:1> * 4);
+weather_controller.addItemInput(<mekanism:controlcircuit:3> * 4);
+weather_controller.addItemInput(<ore:mechanicalComponentSteel>, 2);
+weather_controller.addItemInput(<ore:gpsUnitItem>.firstItem);
+weather_controller.addItemOutput(<advancedrocketry:satelliteprimaryfunction:6>);
+weather_controller.build();
 
 
 /*
@@ -635,6 +644,14 @@ var silicon = newBuilder("silicon", "casting_basin", 200);
 silicon.addFluidInput(<liquid:moltensilicon> * 1200);
 silicon.addItemOutput(<ore:dustSilicon>.firstItem * 12);
 silicon.build();
+var yttrium = newBuilder("yttrium", "casting_basin", 200);
+yttrium.addFluidInput(<liquid:moltenyttrium> * 1200);
+yttrium.addItemOutput(<ore:dustYttrium>.firstItem * 12);
+yttrium.build();
+var neodymium = newBuilder("neodymium", "casting_basin", 200);
+neodymium.addFluidInput(<liquid:moltenneodymium> * 1200);
+neodymium.addItemOutput(<ore:dustNeodymium>.firstItem * 12);
+neodymium.build();
 //Lava & pahoehoe lava to magma
 var magma = newBuilder("magma", "casting_basin", 40);
 magma.addFluidInput(<liquid:lava> * 1000);

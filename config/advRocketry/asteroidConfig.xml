@@ -53,6 +53,8 @@
         <ore itemStack="contenttweaker:titanium_dust_block" chance="0.5" />
         <ore itemStack="contenttweaker:lithium_dust_block" chance="0.5" />
         <ore itemStack="contenttweaker:neodymium_dust_block" chance="0.5" />
+        <ore itemStack="contenttweaker:barium_dust_block" chance="0.05" />
+        <ore itemStack="contenttweaker:yttrium_dust_block" chance="0.05" />
 	</asteroid>
     <asteroid name="C-Type [R]" distance="100" mass="1000" massVariability="0.25" minLevel="0" probability="0.225" richness="1.0" richnessVariability="0.0" baseStack="contenttweaker:silicon_dioxide_dust_block" timeMultiplier="25">
         <ore itemStack="minecraft:ice" chance="18" />
@@ -71,6 +73,8 @@
         <ore itemStack="contenttweaker:titanium_dust_block" chance="1" />
         <ore itemStack="contenttweaker:lithium_dust_block" chance="0.5" />
         <ore itemStack="contenttweaker:neodymium_dust_block" chance="0.5" />
+        <ore itemStack="contenttweaker:barium_dust_block" chance="0.05" />
+        <ore itemStack="contenttweaker:yttrium_dust_block" chance="0.05" />
 	</asteroid>
     <asteroid name="K-Type" distance="120" mass="1000" massVariability="0.25" minLevel="0" probability="0.0375" richness="1.0" richnessVariability="0.0" baseStack="contenttweaker:silicon_dioxide_dust_block" timeMultiplier="30">
         <ore itemStack="contenttweaker:nitrogen_ice" chance="4" />

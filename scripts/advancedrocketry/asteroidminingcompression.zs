@@ -26,3 +26,5 @@ recipes.addShapeless(<ore:dustNiobium>.firstItem * 8, [<contenttweaker:niobium_d
 recipes.addShapeless(<ore:dustMolybdenum>.firstItem * 8, [<contenttweaker:molybdenum_dust_block>]);
 recipes.addShapeless(<immersiveengineering:metal:14> * 8, [<contenttweaker:uranium_dust_block>]);
 recipes.addShapeless(<ore:dustNeodymium>.firstItem * 8, [<contenttweaker:neodymium_dust_block>]);
+recipes.addShapeless(<ore:dustBarium>.firstItem * 8, [<contenttweaker:barium_dust_block>]);
+recipes.addShapeless(<ore:dustYttrium>.firstItem * 8, [<contenttweaker:yttrium_dust_block>]);

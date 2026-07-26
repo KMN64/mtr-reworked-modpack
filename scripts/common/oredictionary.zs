@@ -467,3 +467,5 @@ removeAndHide(<immersiveintelligence:material_dust:6>);
 removeAndHide(<immersive_energy:stick_uranium>);
 <ore:dustSilicon>.remove(<immersiveintelligence:material_dust:5>);
 removeAndHide(<immersiveintelligence:material_dust:5>);
+
+<ore:barsIron>.add(<minecraft:iron_bars>);

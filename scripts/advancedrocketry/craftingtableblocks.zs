@@ -161,15 +161,15 @@ recipes.addShaped(<advancedrocketry:forcefieldprojector>,
 recipes.remove(<advancedrocketry:vacuumlaser>);
 recipes.addShaped(<advancedrocketry:vacuumlaser>,
  [[<mekanism:polyethene:2>, <ore:circuitBasic>, <mekanism:polyethene:2>],
- [<forge:bucketfilled>.withTag({FluidName: "helium", Amount: 1000}), <libvulpes:structuremachine>, <ore:lensGlass>],
+ [<liquid:helium> * 1000, <libvulpes:structuremachine>, <ore:lensGlass>],
  [<mekanism:polyethene:2>, <ore:circuitBasic>, <mekanism:polyethene:2>]]);
 recipes.addShaped(<advancedrocketry:vacuumlaser>,
  [[<mekanism:polyethene:2>, <ore:circuitBasic>, <mekanism:polyethene:2>],
- [<forge:bucketfilled>.withTag({FluidName: "argon", Amount: 1000}), <libvulpes:structuremachine>, <ore:lensGlass>],
+ [<liquid:argon> * 1000, <libvulpes:structuremachine>, <ore:lensGlass>],
  [<mekanism:polyethene:2>, <ore:circuitBasic>, <mekanism:polyethene:2>]]);
 recipes.addShaped(<advancedrocketry:vacuumlaser>,
  [[<mekanism:polyethene:2>, <ore:circuitBasic>, <mekanism:polyethene:2>],
- [<forge:bucketfilled>.withTag({FluidName: "carbondioxide", Amount: 1000}), <libvulpes:structuremachine>, <ore:lensGlass>],
+ [<liquid:carbon_dioxide> * 1000, <libvulpes:structuremachine>, <ore:lensGlass>],
  [<mekanism:polyethene:2>, <ore:circuitBasic>, <mekanism:polyethene:2>]]);
  
 //Make Warp Core recipe slightly more involved
@@ -220,3 +220,12 @@ recipes.addShaped(<advancedrocketry:blastbrick> * 3,
  [[<ore:itemSlag>, <ore:brickBasaltAny>, <ore:itemSlag>],
  [<ore:brickBasaltAny>, <engineersdecor:panzerglass_block>, <ore:brickBasaltAny>],
  [<ore:itemSlag>, <ore:brickBasaltAny>, <ore:itemSlag>]]);
+
+recipes.addShaped(<advancedrocketry:servicemonitor>,
+ [[<ore:sheetTitanium>, <advancedrocketry:misc>, <ore:sheetTitanium>],
+ [<ore:circuitAdvanced>, <advancedrocketry:rocketbuilder>, <ore:circuitAdvanced>],
+ [<ore:gearTitanium>, <advancedrocketry:launchpad>, <ore:gearTitanium>]]);
+recipes.addShaped(<advancedrocketry:servicestation>,
+ [[<ore:sheetTitanium>, <advancedrocketry:structuretower>, <ore:sheetTitanium>],
+ [<ore:circuitAdvanced>, <advancedrocketry:rocketbuilder>, <ore:circuitAdvanced>],
+ [<ore:gearTitanium>, <advancedrocketry:launchpad>, <ore:gearTitanium>]]);

@@ -192,3 +192,6 @@ recipes.remove(<ore:ingotMagnet>.firstItem);
 removeAndHide(<ore:ingotMagnet>.firstItem);
 Electrolyzer.addRecipe(<liquid:distwater> * 75, <liquid:oxygen> * 25, 16, 8, <liquid:hydrogen> * 50);
 //Electrolyzer.removeRecipe(<liquid:brine>);
+
+Blueprint.removeRecipe(<ore:circuitCryptographic>.firstItem);
+Blueprint.addRecipe("advanced_circuits", <ore:circuitCryptographic>.firstItem, [<immersiveintelligence:material:7>, <ore:mechanicalComponentSteel>.firstItem * 2]);

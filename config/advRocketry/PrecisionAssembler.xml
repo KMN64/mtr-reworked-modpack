@@ -439,22 +439,6 @@
 		</output>
 	</Recipe>
 
-
-	<Recipe timeRequired="675" power="16384">
-		<input>
-			<oreDict>grapheneProcessorCrystalEngraved</oreDict>
-            <itemStack>mekanism:polyethene;1;2</itemStack>
-            <oreDict>smdResistor;2</oreDict>
-            <oreDict>wireYttriumBariumCuprate;2</oreDict>
-            <oreDict>solderItem;8</oreDict>
-            <oreDict>circuitBoardPlatinumBackedPlastic;2</oreDict>
-            <fluidStack>liquid_nitrogen;500</fluidStack>
-        </input>
-		<output>
-			<oreDict>circuitCryptographic</oreDict>
-		</output>
-	</Recipe>
-
 	<Recipe timeRequired="450" power="240">
 		<input>
 			<oreDict>circuitPlateIntegratedCircuit;4</oreDict>

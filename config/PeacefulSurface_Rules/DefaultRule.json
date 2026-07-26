@@ -17,7 +17,7 @@
   "dimensionFilter": "(\\bthe_end\\b)|(\\bthe_nether\\b)",
   "LightLevel": 15,
   "MoonPhase": 0,
-  "DisabledUnderBloodmoon": false,
+  "DisabledUnderBloodmoon": true,
   "DisabledWhenSunny": false,
   "DisabledWhenRaining": false,
   "DisabledWhenThundering": false,

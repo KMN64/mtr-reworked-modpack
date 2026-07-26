@@ -101,6 +101,8 @@ furnace.addRecipe(<immersiveengineering:metal:23> * 6, <mekanism:dirtydust:5>);
 furnace.addRecipe(<immersiveengineering:metal:23>, <simpleoresamples:sampleblocksilver>);
 furnace.addRecipe(<immersiveengineering:metal:23> * 12, <contenttweaker:crushed_silver_ore>);
 combiner.removeRecipe(<ore:oreSilver>, <mekanism:dust:5>);
+MetalPress.removeRecipe(<ore:stickSilver>.firstItem);
+MetalPress.addRecipe(<ore:stickSilver>.firstItem * 2, <ore:ingotSilver>, <immersiveengineering:mold:2>, 2400);
 
 //Lead
 Crusher.removeRecipesForInput(<immersiveengineering:ore:2>);
@@ -251,6 +253,7 @@ register([<ore:nuggetEnrichedNaquadah>, <ore:ingotEnrichedNaquadah>]);
 register([<ore:nuggetOsmiridium>, <ore:ingotOsmiridium>]);
 register([<ore:nuggetNeutronium>, <ore:ingotNeutronium>]);
 register([<ore:nuggetMolybdenum>, <ore:ingotMolybdenum>, <ore:stickMolybdenum>, <ore:plateMolybdenum>, <ore:dustMolybdenum>]);
+register([<ore:nuggetMischmetal>, <ore:ingotMischmetal>, <ore:dustMischmetal>]);
 register([<ore:nuggetAdvancedElectronicAlloy>, <ore:ingotAdvancedElectronicAlloy>, <ore:plateAdvancedElectronicAlloy>, <ore:dustAdvancedElectronicAlloy>]);
 
 //CT sheets

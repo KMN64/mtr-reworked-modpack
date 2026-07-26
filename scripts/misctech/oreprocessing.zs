@@ -209,6 +209,21 @@ rutile_dust.addItemOutput(<ore:dustRutile>.firstItem * 64);
 rutile_dust.addItemOutput(<ore:dustRutile>.firstItem * 64);
 rutile_dust.addItemOutput(<ore:dustRutile>.firstItem * 64);
 rutile_dust.build();
+var titanium_ingot = newBuilder("titanium_ingot", "casting_basin", 400);
+titanium_ingot.addFluidInput(<liquid:moltentitanium> * 1200);
+titanium_ingot.addItemInput(<ore:metalPressMoldIngot>.firstItem).setChance(0);
+titanium_ingot.addItemOutput(<ore:ingotTitanium>.firstItem * 12);
+titanium_ingot.build();
+var titanium_plate = newBuilder("titanium_plate", "casting_basin", 400);
+titanium_plate.addFluidInput(<liquid:moltentitanium> * 1200);
+titanium_plate.addItemInput(<immersiveengineering:mold>).setChance(0);
+titanium_plate.addItemOutput(<ore:plateTitanium>.firstItem * 12);
+titanium_plate.build();
+var titanium_rod = newBuilder("titanium_rod", "casting_basin", 200);
+titanium_rod.addFluidInput(<liquid:moltentitanium> * 600);
+titanium_rod.addItemInput(<immersiveengineering:mold:2>).setChance(0);
+titanium_rod.addItemOutput(<ore:stickTitanium>.firstItem * 12);
+titanium_rod.build();
 
 //Platinum Processing
 Mixer.addRecipe(<liquid:nitricacidhydrochloridept> * 100, <liquid:nitricacidhydrochloride> * 100, [<ore:dustMixedPlatinumGroupMetal>.firstItem], 4000);
@@ -239,3 +254,14 @@ niobium_pentoxide.build();
 //Zinc processing
 Mixer.addRecipe(<liquid:zincsulfatesolution> * 100, <liquid:sulfuric_acid> * 100, [<mekores:mekanismore:113>], 4000);
 ElectrolyticCrucibleBattery.addRecipe(<liquid:sulfuric_acid> * 1200, null, <liquid:zincsulfatesolutionresidue> * 400, <ore:plateZinc>.firstItem * 16, <liquid:zincsulfatesolution> * 1600, 1920000, 400);
+
+//Mischmetal
+var mischmetal_ingot = newBuilder("mischmetal_ingot", "casting_basin", 400);
+mischmetal_ingot.addFluidInput(<liquid:moltenmischmetal> * 1200);
+mischmetal_ingot.addItemInput(<ore:metalPressMoldIngot>.firstItem).setChance(0);
+mischmetal_ingot.addItemOutput(<ore:ingotMischmetal>.firstItem * 12);
+mischmetal_ingot.build();
+var mischmetal = newBuilder("mischmetal", "casting_basin", 400);
+mischmetal.addFluidInput(<liquid:moltenmischmetal> * 1200);
+mischmetal.addItemOutput(<ore:dustMischmetal>.firstItem * 12);
+mischmetal.build();

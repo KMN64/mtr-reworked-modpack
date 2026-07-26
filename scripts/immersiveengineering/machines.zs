@@ -170,6 +170,7 @@ ElectrolyticCrucibleBattery.addRecipe(<liquid:moltenlithium> * 1600, <liquid:chl
 ElectrolyticCrucibleBattery.addRecipe(<liquid:hydrogen> * 800, <liquid:fluorine> * 800, null, null, <liquid:hydrofluoric_acid> * 1600, 1536000, 400);
 ElectrolyticCrucibleBattery.addRecipe(<liquid:carbon_monoxide> * 1600, <liquid:oxygen> * 800, null, null, <liquid:carbon_dioxide> * 1600, 384000, 100);
 
+ElectrolyticCrucibleBattery.addRecipe(<liquid:moltenyttrium> * 1600, <liquid:moltenneodymium> * 1600, <liquid:chlorine> * 800, null, <liquid:moltenmischmetalchloride> * 1600, 384000, 100);
 //Melting recipes
 MeltingCrucible.addRecipe(<liquid:moltensalt> * 100, <ore:dustSalt>, 40);
 MeltingCrucible.addRecipe(<liquid:moltenmagnesiumchloride> * 100, <ore:dustMagnesiumChloride>, 40);
@@ -178,6 +179,8 @@ MeltingCrucible.addRecipe(<liquid:moltencalciumchloride> * 100, <ore:dustCalcium
 MeltingCrucible.addRecipe(<liquid:polyethene> * 125, <mekanism:polyethene>, 5);
 MeltingCrucible.addRecipe(<liquid:moltencryolite> * 1000, <ore:oreCryolite>, 320);
 
+MeltingCrucible.addRecipe(<liquid:moltenmischmetalchloride> * 100, <ore:dustMischmetalChloride>, 40);
+MeltingCrucible.addRecipe(<liquid:moltenmischmetal> * 100, <ore:dustMischmetal>, 40);
 //Remove string recipe
 Crusher.removeRecipe(<minecraft:string>);
 Crusher.removeRecipesForInput(<ore:itemSlag>.firstItem);

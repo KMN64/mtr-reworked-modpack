@@ -191,6 +191,8 @@ fluid.pahoehoelava=Pahoehoe Lava
 #Ore processing
 #Cinnabar
 fluid.mercury=Mercury
+fluid.mercuryvapor=Mercury Vapor
+fluid.heatedmercury=Heated Mercury Vapor
 #Aluminium processing
 fluid.sodiumhydroxidesolution=Sodium Hydroxide Solution
 fluid.impuresodiumaluminatesolution=Sodium Aluminate Solution - Impure
@@ -253,6 +255,9 @@ fluid.molteniron=Molten Iron
 fluid.moltentitanium=Molten Titanium
 fluid.moltensilicon=Molten Silicon
 fluid.moltenmischmetal=Molten Mischmetal
+fluid.moltenmischmetalchloride=Molten Mischmetal Chloride
+fluid.moltenyttrium=Molten Yttrium
+fluid.moltenneodymium=Molten Neodymium
 fluid.moltenslag=Molten Slag
 fluid.moltensulfur=Molten Sulfur
 
@@ -329,6 +334,8 @@ tile.contenttweaker.uranium_dust_block.name=Compressed Uranium Dioxide Grit
 tile.contenttweaker.molybdenum_dust_block.name=Compressed Molybdenum Grit
 tile.contenttweaker.titanium_dust_block.name=Compressed Titanium Grit
 tile.contenttweaker.neodymium_dust_block.name=Compressed Neodymium Grit
+tile.contenttweaker.barium_dust_block.name=Compressed Barium Grit
+tile.contenttweaker.yttrium_dust_block.name=Compressed Yttrium Grit
 
 #Stones & fluxes
 tile.contenttweaker.crushed_basalt.name=Crushed Basalt

@@ -176,6 +176,14 @@
 			<oreDict>stickAdvancedElectronicAlloy;2</oreDict>
 		</output>
 	</Recipe>
+	<Recipe timeRequired="150" power ="160">
+		<input>
+			<oreDict>ingotMischmetal</oreDict>
+		</input>
+		<output>
+			<oreDict>stickMischmetal;2</oreDict>
+		</output>
+	</Recipe>
     
 	<Recipe timeRequired="900" power="192">
 		<input>

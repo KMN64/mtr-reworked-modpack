@@ -164,6 +164,8 @@ create_block_sound("tin_dust_block", <blockmaterial:sand>, 0.75, 1.25, "shovel",
 create_block_sound("titanium_dust_block", <blockmaterial:sand>, 0.75, 1.25, "shovel", <soundtype:sand>, 1);
 create_block_sound("niobium_dust_block", <blockmaterial:sand>, 0.75, 1.25, "shovel", <soundtype:sand>, 1);
 create_block_sound("neodymium_dust_block", <blockmaterial:sand>, 0.75, 1.25, "shovel", <soundtype:sand>, 1);
+create_block_sound("barium_dust_block", <blockmaterial:sand>, 0.75, 1.25, "shovel", <soundtype:sand>, 1);
+create_block_sound("yttrium_dust_block", <blockmaterial:sand>, 0.75, 1.25, "shovel", <soundtype:sand>, 1);
 
 //Crushed ore blocks
 create_block_sound("crushed_iron_ore", <blockmaterial:sand>, 0.6, 0.8, "shovel", <soundtype:ground>, 1);

@@ -288,6 +288,17 @@
             <oreDict>dustAmmoniumChloride;8</oreDict>
 		</output>
 	</Recipe>
+
+	<Recipe timeRequired="100" power="512">
+		<input>
+			<oreDict>dustMischmetal;2</oreDict>
+            <fluidStack>liquidhydrogenchloride;600</fluidStack>
+        </input>
+		<output>
+            <oreDict>dustMischmetalChloride;2</oreDict>
+			<fluidStack>hydrogen;300</fluidStack>
+		</output>
+	</Recipe>
     
     <Recipe timeRequired="4800" power="1024">
 		<input>

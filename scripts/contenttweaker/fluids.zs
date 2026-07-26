@@ -150,6 +150,8 @@ create_gas("precipitategas", "7ebad1");
 //Ore processing
 //Mercury
 create_solid_fluid("mercury", "6B6B6B", 300, 13500, 1000);
+create_gas("mercuryvapor", "6B6B6B");
+create_gas("heatedmercury", "6B6B6B");
 //Aluminium processing fluids
 create_fluid("sodiumhydroxidesolution", "4A5CF5", 300, 3000, 7800);
 create_fluid("impuresodiumaluminatesolution", "1A1A20", 300, 3100, 7800);
@@ -212,4 +214,7 @@ create_molten_fluid("molteniron", "989898", 1810, 6980, 10000);
 create_molten_fluid("moltentitanium", "CCC8FA", 1940, 4110, 10000);
 create_molten_fluid("moltensilicon", "070707", 1680, 2570, 10000);
 create_molten_fluid("moltenmischmetal", "7E8084", 2000, 9000, 10000);
+create_molten_fluid("moltenmischmetalchloride", "7E8084", 2000, 9000, 10000);
+create_molten_fluid("moltenyttrium", "7E8084", 2000, 9000, 10000);
+create_molten_fluid("moltenneodymium", "7E8084", 2000, 9000, 10000);
 create_molten_fluid("moltensulfur", "B08D25", 390, 1920, 10000);

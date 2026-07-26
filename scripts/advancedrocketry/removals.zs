@@ -24,6 +24,8 @@ removeAndHide(<advancedrocketry:ic:0>);
 removeAndHide(<advancedrocketry:ic:2>);
 removeAndHide(<advancedrocketry:wafer>);
 removeAndHide(<advancedrocketry:itemcircuitplate:*>);
+recipes.replaceAllOccurences(<advancedrocketry:misc>, <ore:paneGlass>);
+removeAndHide(<advancedrocketry:misc>);
 
 //Remove unused Advanced Rocketry multiblocks
 removeAndHide(<advancedrocketry:blockpump>);
