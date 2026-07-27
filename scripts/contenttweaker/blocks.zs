@@ -39,6 +39,7 @@ create_block("platinum_ore", <blockmaterial:rock>, 3.0, 3.0, "pickaxe", 2);
 create_block("tungsten_ore", <blockmaterial:rock>, 3.0, 3.0, "pickaxe", 2);
 create_block("zirconium_ore", <blockmaterial:rock>, 3.0, 3.0, "pickaxe", 2);
 create_block("niobium_ore", <blockmaterial:rock>, 3.0, 3.0, "pickaxe", 2);
+create_block("barite_ore", <blockmaterial:rock>, 3.0, 3.0, "pickaxe", 2);
 var osmiridium_ore = createBlock("osmiridium_ore", <blockmaterial:rock>);
 osmiridium_ore.setBlockHardness(3.0);
 osmiridium_ore.setBlockResistance(3.0);
@@ -186,6 +187,7 @@ create_block_sound("crushed_tungsten_ore", <blockmaterial:sand>, 0.6, 0.8, "shov
 create_block_sound("crushed_osmium_ore", <blockmaterial:sand>, 0.6, 0.8, "shovel", <soundtype:ground>, 1);
 create_block_sound("crushed_zinc_ore", <blockmaterial:sand>, 0.6, 0.8, "shovel", <soundtype:ground>, 1);
 create_block_sound("crushed_osmiridium_ore", <blockmaterial:sand>, 0.6, 0.8, "shovel", <soundtype:ground>, 1);
+create_block_sound("crushed_barite_ore", <blockmaterial:sand>, 0.6, 0.8, "shovel", <soundtype:ground>, 1);
 
 //Ore processing byproduct blocks
 create_block_sound("crushed_ore_spoils", <blockmaterial:sand>, 0.6, 0.8, "shovel", <soundtype:ground>, 1);

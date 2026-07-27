@@ -265,3 +265,6 @@ var mischmetal = newBuilder("mischmetal", "casting_basin", 400);
 mischmetal.addFluidInput(<liquid:moltenmischmetal> * 1200);
 mischmetal.addItemOutput(<ore:dustMischmetal>.firstItem * 12);
 mischmetal.build();
+
+//Barium processing
+BlastFurnace.addRecipe(<ore:dustWashedBarium>.firstItem, <ore:dustDirtyBarite>.firstItem, 300, null);

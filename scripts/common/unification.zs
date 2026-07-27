@@ -113,6 +113,8 @@ furnace.addRecipe(<immersiveengineering:metal:2>, <ore:dustDirtyLead>);
 furnace.addRecipe(<immersiveengineering:metal:2> * 2, <contenttweaker:crushed_lead_ore>);
 combiner.removeRecipe(<ore:oreLead>, <mekanism:dust:6>);
 MetalPress.addRecipe(<ore:sheetLead>.firstItem, <ore:plateLead>, <immersiveengineering:mold:0>, 3600);
+MetalPress.removeRecipe(<ore:stickLead>.firstItem);
+MetalPress.addRecipe(<ore:stickLead>.firstItem * 2, <ore:ingotLead>, <immersiveengineering:mold:2>, 2400);
 
 //Tin
 Crusher.removeRecipesForInput(<libvulpes:productingot:5>);
@@ -348,3 +350,6 @@ Crusher.addRecipe(<contenttweaker:crushed_basalt>, <ore:stoneBasaltAny>, 2400);
 
 //Osmiridium
 Crusher.addRecipe(<contenttweaker:crushed_osmiridium_ore>, <ore:oreOsmiridium>.firstItem, 4000);
+
+//Barium
+Crusher.addRecipe(<contenttweaker:crushed_barite_ore>, <ore:oreBarite>.firstItem, 4000);

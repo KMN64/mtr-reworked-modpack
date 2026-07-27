@@ -181,15 +181,11 @@ ChemicalBath.addRecipe(<ore:dustQuartzDirty>, <ore:dustQuartz>.firstItem, <liqui
 recipes.replaceAllOccurences(<immersiveintelligence:material_dust:5>, <libvulpes:productdust:3>, <ore:dustVulcanizationCompound>.firstItem);
 <ore:pulpWood>.remove(<mekanism:sawdust>);
 
-recipes.replaceAllOccurences(<ore:ingotMagnet>, <ore:dustNeodymium>, <ore:engineElectricCompactAdvanced>.firstItem);
-recipes.replaceAllOccurences(<ore:ingotMagnet>, <ore:dustNeodymium>, <ore:engineElectricCompact>.firstItem);
-recipes.replaceAllOccurences(<ore:ingotMagnet>, <ore:dustNeodymium>, <immersiveintelligence:weapon_upgrade:18>);
-recipes.replaceAllOccurences(<ore:ingotMagnet>, <ore:dustNeodymium>, <immersiveintelligence:weapon_upgrade:14>);
-recipes.replaceAllOccurences(<ore:ingotMagnet>, <ore:dustNeodymium>, <immersiveintelligence:mine_detector>);
+//recipes.replaceAllOccurences(<ore:ingotMagnet>, <ore:dustNeodymium>);
 recipes.replaceAllOccurences(<ore:circuitBasic>, <immersiveengineering:material:27>, <immersiveintelligence:mine_detector>);
 
 recipes.remove(<ore:ingotMagnet>.firstItem);
-removeAndHide(<ore:ingotMagnet>.firstItem);
+//removeAndHide(<ore:ingotMagnet>.firstItem);
 Electrolyzer.addRecipe(<liquid:distwater> * 75, <liquid:oxygen> * 25, 16, 8, <liquid:hydrogen> * 50);
 //Electrolyzer.removeRecipe(<liquid:brine>);
 

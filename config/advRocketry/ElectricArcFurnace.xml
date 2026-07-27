@@ -158,7 +158,6 @@
 		</output>
 	</Recipe>
     
-    
     <Recipe timeRequired="150" power="480">
 		<input>
 			<oreDict>dustSulfur;12</oreDict>

@@ -769,7 +769,7 @@
         "weight": 60
       },
       {
-        "block": "contenttweaker:zircon_ore",
+        "block": "contenttweaker:zirconium_ore",
         "weight": 25
       },
       {
@@ -902,6 +902,34 @@
       },
       {
         "block": "contenttweaker:nether_cinnabar_ore",
+        "weight": 30
+      },
+      {
+        "block": "contenttweaker:nether_gold_ore",
+        "weight": 10
+      }
+    ],
+    "stone": ["minecraft:netherrack"],
+    "rarity": 512,
+    "count": 1,
+    "dimensions": [-1],
+    "dimensions_is_whitelist": true,
+    "min_y": 64,
+    "max_y": 96,
+    "density": 128
+  },
+  "phosphoric_quartzite": {
+    "type": "sphere",
+    "vertical_size": 5,
+    "horizontal_size": 20,
+    "ore": [
+      {
+        "block": "minecraft:quartz_ore",
+        "weight": 60
+      },
+      {
+        "block": "immersiveintelligence:ore",
+        "meta": 5,
         "weight": 30
       },
       {

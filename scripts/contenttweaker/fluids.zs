@@ -195,6 +195,8 @@ create_fluid("nitricacidhydrochlorideptprocessed", "D95E4C", 300, 1210, 1000);
 create_fluid("nitricacidhydrochlorideirprocessed", "D95E4C", 300, 1210, 1000);
 create_fluid("nitricacidhydrochlorideosprocessed", "D95E4C", 300, 1210, 1000);
 create_fluid("osacidicsolution", "82802B", 300, 1820, 1000);
+//Barium processing fluids
+create_fluid("bariumhydroxidesolution", "85878a", 300, 3000, 7800);
 
 //Regolith processing
 create_molten_fluid("moltenlowlandvoltaileregolith", "717171", 1750, 3200, 10000);

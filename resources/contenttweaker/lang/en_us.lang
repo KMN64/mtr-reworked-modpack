@@ -2,6 +2,7 @@
 #New parts - dust types
 contenttweaker.part.salt=%s
 contenttweaker.part.gemdust=%s Dust
+contenttweaker.part.oredust=%s Ore Dust
 contenttweaker.part.nonmetaldust=%s Dust
 contenttweaker.part.dustunshaded=%s Dust
 contenttweaker.part.riffle=%s Riffle
@@ -237,6 +238,8 @@ fluid.nitricacidhydrochlorideirprocessed=Nitric Acid Hydrochloride - Dissolved I
 fluid.nitricacidhydrochlorideosprocessed=Nitric Acid Hydrochloride - Dissolved Ir & Os - Os
 fluid.nitricacidhydrochloride=Nitric Acid Hydrochloride
 fluid.osacidicsolution=Osmium Acidic Solution
+#Barium Processing
+fluid.bariumhydroxidesolution=Barium Hydroxide Solution
 
 #Regolith processing
 fluid.moltenhighlandvoltaileregolith=Molten Highland Gas-Rich Regolith
@@ -378,6 +381,7 @@ tile.contenttweaker.crushed_tungsten_ore.name=Crushed Tungsten Ore
 tile.contenttweaker.crushed_osmium_ore.name=Crushed Osmium Ore
 tile.contenttweaker.crushed_zinc_ore.name=Crushed Zinc Ore
 tile.contenttweaker.crushed_osmiridium_ore.name=Crushed Osmiridium Ore
+tile.contenttweaker.crushed_barite_ore.name=Crushed Barite Ore
 
 #Ores
 tile.contenttweaker.cryolite_ore.name=Cryolite Ore
@@ -385,6 +389,7 @@ tile.contenttweaker.platinum_ore.name=Platinum Ore
 tile.contenttweaker.tungsten_ore.name=Tungsten Ore
 tile.contenttweaker.zirconium_ore.name=Zirconium Ore
 tile.contenttweaker.niobium_ore.name=Niobium Ore
+tile.contenttweaker.barite_ore.name=Barite Ore
 tile.contenttweaker.osmiridium_ore.name=Osmiridium Ore
 tile.contenttweaker.cinnabar_ore.name=Cinnabar Ore
 tile.contenttweaker.nether_gold_ore.name=Nether Gold Ore

@@ -18,6 +18,7 @@ import mods.contenttweaker.MaterialSystem;
 
 //New parts - dust types
 MaterialSystem.getPartBuilder().setName("salt").setPartType(MaterialSystem.getPartType("item")).setOreDictName("dust").build();
+MaterialSystem.getPartBuilder().setName("oredust").setPartType(MaterialSystem.getPartType("item")).setOreDictName("dustDirty").build();
 MaterialSystem.getPartBuilder().setName("gemdust").setPartType(MaterialSystem.getPartType("item")).setOreDictName("dust").build();
 MaterialSystem.getPartBuilder().setName("nonmetaldust").setPartType(MaterialSystem.getPartType("item")).setOreDictName("dust").build();
 MaterialSystem.getPartBuilder().setName("dustunshaded").setPartType(MaterialSystem.getPartType("item")).setHasOverlay(false).setOreDictName("dust").build();
@@ -91,7 +92,7 @@ MaterialSystem.getPartBuilder().setName("frame").setPartType(MaterialSystem.getP
 
 
 //Order
-static order as string[] = ["ingot", "plate", "gemplate", "nugget", "rod", "gear", "fiber", "wire", "sheet", "scaffoldingpanel", "smallpipe", "mechanicalcomponent", "fuelpellet", "compressorblade", "compressor", "dust", "gemdust", "nonmetaldust", "dustunshaded", "salt", "riffle", "amalgam", "sludge", "slag", "fuel", "lens", "boule", "boulewafer", "wafer", "circuitplate", "etchingplate", "preparedwafer", "grapheneprocessorcrystal", "etchedwafer", "processorcrystal", "naquadahprocessorcrystal", "perfectcircuit", "circuitboard", "smd", "gpsunit", "circuitdesignic", "circuitdesigncpu", "circuitdesignmemory", "solder", "fuelbundle", "rodbundle", "smallbatteryhull", "supercapacitorhull", "supercapacitor", "inductiontablet", "unfilledsuperconductorcable", "unfilledhighcurrentsuperconductorcable", "enginebell", "advancedenginebell", "catalyticturbopump", "turbopump", "pressurizedheliumtank", "fueltankshell", "reactionwheel", "solarpanel", "mirrorarray", "collectionarray", "metalpressmold", "heavymetalpressdie", "injectionmold", "block", "frame", "machinecasing"];
+static order as string[] = ["ingot", "plate", "gemplate", "nugget", "rod", "gear", "fiber", "wire", "sheet", "scaffoldingpanel", "smallpipe", "mechanicalcomponent", "fuelpellet", "compressorblade", "compressor", "dust", "gemdust", "nonmetaldust", "dustunshaded", "salt", "riffle", "amalgam", "sludge", "slag", "fuel", "lens", "boule", "boulewafer", "wafer", "circuitplate", "etchingplate", "preparedwafer", "grapheneprocessorcrystal", "etchedwafer", "processorcrystal", "naquadahprocessorcrystal", "perfectcircuit", "circuitboard", "smd", "gpsunit", "circuitdesignic", "circuitdesigncpu", "circuitdesignmemory", "solder", "fuelbundle", "rodbundle", "smallbatteryhull", "supercapacitorhull", "supercapacitor", "inductiontablet", "unfilledsuperconductorcable", "unfilledhighcurrentsuperconductorcable", "enginebell", "advancedenginebell", "catalyticturbopump", "turbopump", "pressurizedheliumtank", "fueltankshell", "reactionwheel", "solarpanel", "mirrorarray", "collectionarray", "metalpressmold", "heavymetalpressdie", "injectionmold", "oredust", "block", "frame", "machinecasing"];
 
 
 
@@ -139,6 +140,9 @@ static materials as Material[string] = {
     "Neodymium" : MaterialSystem.getMaterialBuilder().setName("Neodymium").setColor(Color.fromHex("7e8084")).build(),
     "Yttrium" : MaterialSystem.getMaterialBuilder().setName("Yttrium").setColor(Color.fromHex("848689")).build(),
     "Barium" : MaterialSystem.getMaterialBuilder().setName("Barium").setColor(Color.fromHex("85878a")).build(),
+    "Barium Oxide" : MaterialSystem.getMaterialBuilder().setName("Barium Oxide").setColor(Color.fromHex("85878a")).build(),
+    "Barium Aluminate" : MaterialSystem.getMaterialBuilder().setName("Barium Aluminate").setColor(Color.fromHex("85878a")).build(),
+    "Barite" : MaterialSystem.getMaterialBuilder().setName("Barite").setColor(Color.fromHex("85878a")).build(),
     "Mixed End Metals" : MaterialSystem.getMaterialBuilder().setName("Mixed End Metals").setColor(Color.fromHex("283d3b")).build(),
     "Mixed Fissile Metals" : MaterialSystem.getMaterialBuilder().setName("Mixed Fissile Metals").setColor(Color.fromHex("2b5232")).build(),
     "Rich Mixed Platinum Group Metal" : MaterialSystem.getMaterialBuilder().setName("Rich Mixed Platinum Group Metal").setColor(Color.fromHex("c6d0d1")).build(),
@@ -317,7 +321,10 @@ static parts as string[][string] = {
     "Niobium" : ["dust"],
     "Neodymium" : ["dust"],
     "Yttrium" : ["dust"],
-    "Barium" : ["dust"],
+    "Barium" : ["dust", "riffle"],
+    "Barium Oxide": ["nonmetaldust"],
+    "Barium Aluminate": ["nonmetaldust"],
+    "Barite": ["oredust"],
     "Mixed End Metals" : ["dust"],
     "Mixed Fissile Metals" : ["dust", "fuelpellet"],
     "Rich Mixed Platinum Group Metal" : ["dust"],
@@ -477,7 +484,7 @@ for type, String in order {
                     data.addDataValue("hardness", 8);
                     data.addDataValue("resistance", 20);
                     data.addDataValue("harvestLevel", 3);
-                } else if (order[type].contains("ore")) {
+                } else if (order[type].contains("nothing")) {
                     val data = materials[material].registerPart(order[type]).getData();
                     data.addDataValue("hardness", 3);
                     data.addDataValue("resistance", 3);
@@ -492,8 +499,9 @@ for type, String in order {
                     data.addDataValue("hardness", 4);
                     data.addDataValue("resistance", 16);
                     data.addDataValue("harvestLevel", 2);
-                } else
+                } else {
                     materials[material].registerPart(order[type]);
+                }
             }
         }
     }

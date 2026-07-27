@@ -86,6 +86,7 @@ import mods.immersiveengineering.BottlingMachine;
 <ore:oreTungsten>.add(<contenttweaker:tungsten_ore>);
 <ore:oreZirconium>.add(<contenttweaker:zirconium_ore>);
 <ore:oreNiobium>.add(<contenttweaker:niobium_ore>);
+<ore:oreBarite>.add(<contenttweaker:barite_ore>);
 <ore:oreOsmiridium>.add(<contenttweaker:osmiridium_ore>);
 <ore:oreCinnabar>.add(<contenttweaker:cinnabar_ore>);
 <ore:oreGold>.add(<contenttweaker:nether_gold_ore>);

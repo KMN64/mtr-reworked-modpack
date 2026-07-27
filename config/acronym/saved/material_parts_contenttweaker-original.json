@@ -6,6 +6,7 @@
     "item_pressurizedheliumtank": 264,
     "yttrium_barium_cuprate_dust": 135,
     "tungsten_wire": 87,
+    "barium_riffle": 317,
     "molybdenum_ingot": 12,
     "tungstensteel_dust": 151,
     "lightly_enriched_uranium_dioxide_ingot": 8,
@@ -251,6 +252,7 @@
     "copper_derived_anode_sludge": 195,
     "carbon_fiber_flywheel_component_machinecasing": 306,
     "h_d_p_e_rod_injectionmold": 280,
+    "barite_oredust": 319,
     "h_d_p_e_pellet_metalpressmold": 271,
     "mischmetal_wire": 90,
     "lightly_enriched_uranium_dioxide_plate": 25,
@@ -317,6 +319,8 @@
     "enriched_naquadah_dust": 156,
     "depleted_uranium_dioxide_nugget": 50,
     "mischmetal_dust": 149,
-    "uranium_tetrafluoride_nonmetaldust": 170
+    "uranium_tetrafluoride_nonmetaldust": 170,
+    "barium_oxide_nonmetaldust": 320,
+    "barium_aluminate_nonmetaldust": 321
   }
 }

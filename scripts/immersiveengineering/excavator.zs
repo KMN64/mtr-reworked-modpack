@@ -78,6 +78,7 @@ Excavator.addMineral("Pentlandite", 20, 0.05, ["cobblestone", "gravel", "dirt", 
 Excavator.addMineral("Chalcopyrite", 30, 0.05, ["cobblestone", "gravel", "dirt", "oreIron", "oreCopper", "dustSulfur"], [0.41666666666666, 0.2083333333333333333, 0.041666666666666, 0.35, 0.35, 0.3], [0], false);
 Excavator.addMineral("Laterite", 20, 0.05, ["cobblestone", "gravel", "dirt", "oreBauxite", "oreIron", "oreIlmenite"], [0.41666666666666, 0.2083333333333333333, 0.041666666666666, 0.775, 0.2, 0.025], [0], false);
 Excavator.addMineral("Sphalerite", 20, 0.1, ["cobblestone", "gravel", "dirt", "oreZinc", "oreIron", "dustSulfur"], [0.41666666666666, 0.2083333333333333333, 0.041666666666666, 0.6, 0.3, 0.1], [0], false);
+Excavator.addMineral("Barite", 20, 0.2, ["cobblestone", "gravel", "dirt", "oreBarite", "oreLead", "dustSulfur"], [0.41666666666666, 0.2083333333333333333, 0.041666666666666, 0.7, 0.15, 0.3], [0], false);
 //Medium (40% ore)
 Excavator.addMineral("Banded Iron", 25, 0.1, ["cobblestone", "gravel", "dirt", "oreIron"], [1.0, 0.375, 0.125, 1.0], [0], false);
 Excavator.addMineral("Auricupride", 15, 0.1, ["cobblestone", "gravel", "dirt", "oreCopper", "oreGold"], [1.0, 0.375, 0.125, 0.75, 0.25], [0], false);

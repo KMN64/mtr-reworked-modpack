@@ -288,7 +288,6 @@
             <oreDict>dustAmmoniumChloride;8</oreDict>
 		</output>
 	</Recipe>
-
 	<Recipe timeRequired="100" power="512">
 		<input>
 			<oreDict>dustMischmetal;2</oreDict>
@@ -297,6 +296,37 @@
 		<output>
             <oreDict>dustMischmetalChloride;2</oreDict>
 			<fluidStack>hydrogen;300</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="512">
+		<input>
+			<oreDict>dustWashedBarium</oreDict>
+            <fluidStack>water;200</fluidStack>
+        </input>
+		<output>
+            <fluidStack>bariumhydroxidesolution;100</fluidStack>
+			<fluidStack>hydrogensulfide;100</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="512">
+		<input>
+			<fluidStack>bariumhydroxidesolution;100</fluidStack>
+        </input>
+		<output>
+            <oreDict>dustBariumOxide</oreDict>
+			<fluidStack>water;100</fluidStack>
+		</output>
+	</Recipe>
+	<Recipe timeRequired="100" power="1920">
+		<input>
+			<oreDict>dustBariumOxide;3</oreDict>
+            <oreDict>dustAluminum;2</oreDict>
+            <fluidStack>argon;4000</fluidStack>
+        </input>
+		<output>
+            <oreDict>dustBariumAluminate</oreDict>
+            <oreDict>dustBarium;3</oreDict>
+            <fluidStack>argon;4000</fluidStack>
 		</output>
 	</Recipe>
     
