@@ -207,6 +207,19 @@
             <fluidStack>argon;3500</fluidStack>
 		</output>
 	</Recipe>
+
+	<Recipe timeRequired="4000" power="512">
+		<input>
+			<oreDict>dustYttrium</oreDict>
+			<oreDict>dustBarium;2</oreDict>
+			<oreDict>ingotEquivalentNickel;4</oreDict>
+			<oreDict>ingotEquivalentCopper;3</oreDict>
+            <fluidStack>oxygen;500</fluidStack>
+        </input>
+		<output>
+            <oreDict>dustYttriumBariumCuprate;10</oreDict>
+		</output>
+	</Recipe>
     
     <Recipe timeRequired="400" power ="1536">
 		<input>
