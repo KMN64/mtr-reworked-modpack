@@ -217,7 +217,7 @@
             <fluidStack>oxygen;500</fluidStack>
         </input>
 		<output>
-            <oreDict>dustYttriumBariumCuprate;10</oreDict>
+            <oreDict>ingotYttriumBariumCuprate;10</oreDict>
 		</output>
 	</Recipe>
     
